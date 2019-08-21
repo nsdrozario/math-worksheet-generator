@@ -1,37 +1,50 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Math Worksheet Generator</title>
-        <?php
-            include 'include/head.php';
-        ?>
-    </head>
-    <body>
-        <?php 
-        include 'include/navbar.php';
-        ?>
-
-        <h1 style="text-align: center;">Math Worksheet Generator</h1>
-        <br/>
-        <br/>
-        <br/>
-        <h3 style="text-align: center;">A simple solution for math training</h3>
-        <br/>
-        <br/>
-        <div class="card" id="features">
-          <h2>Features</h2>
-                <div style="border-right: 2px solid white; display: inline-block; margin-right: 0.05%; padding: 15px;">
-                        <h3>Online</h3>
-                        <p>This service is 100% online<br/>and requires no downloads.<br/><br/><br/></p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <title>Math Worksheet Generator</title>
+    <?php
+      include 'include/head.php';
+    ?>
+    <script type='text/javascript'>
+    function scrollToAnchor(aid){
+      var divTag = $("div[id='"+ aid +"']");
+      $('html,body').animate({scrollTop: divTag.offset().top}, 1000);
+    }
+    </script>
+  </head>
+  <body>
+    <?php
+      include 'include/navbar.php';
+    ?>
+    <div id='home'>
+      <div class='jumbotron text-center'>
+        <h1>Math Worksheet Generator</h1>
+        <p><h4>A simple solution for math training</h4></p><br/><br/><br/>
+        <p><h4><a href='#features' onclick='scrollToAnchor("features")'>Scroll <i class='material-icons'>keyboard_arrow_down</i></a></h4></p>
+      </div>
+    </div>
+    <div id='features'>
+      <br/>
+      <div class='jumbotron text-center'><h1>Features</h1></div>
+      <div class='row'>
+        <div class="col-md-6 text-center">
+                        <p><h2>Online</h2></p><br/>
+                        <p><h4>This service is 100% online and requires no downloads.</h4></p>
+                </div><br/><br/>
+                 <div class='col-md-6 text-center'>
+                     <p><h2>Test Mode</h2></p><br/>
+                     <p><h4>Automatically generate multiple forms and answer keys with shown work.</h4></p>
                 </div>
-                 <div style="display: inline-block; margin-left: 0.05%; padding: 15px;;">
-                     <h3>Test Mode</h3>
-                     <p>Automatically generate <br/>multiple forms and<br/> answer keys<br/>with shown work.</p>
-                </div>
-
+              </div><br/><br/>
+        <div class='jumbotron text-center'>
+          <p><h4><a href='#home' onclick='scrollToAnchor("home")'>Back to Top <i class='material-icons'>keyboard_arrow_up</i></a></h4></p>
         </div>
+        </div>
+      </div>
     </body>
 </html>

@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
         <?php
             include 'include/head.php';
         ?>
@@ -9,23 +14,20 @@
         <?php
             include 'include/navbar.php'
         ?>
-
-        <h1>About</h1>
-
-        This website is dedicated to generating math problems, for educational purposes.
-
-        <h2>Attribution</h2>
+        <div class='jumbotron text-center'><h2>Attributions</h2><br/>
         <p>
-        Math Worksheet Generator uses third-party software and fonts/typefaces. This section of the website is to give attribution to these third-party materials. 
+        Math Worksheet Generator uses third-party software and fonts/typefaces. This section of the website is to give attribution to these third-party materials.
         <br/>
-        Each third-party material will have their license listed with their attribution. 
+        Each third-party material will have their license listed with their attribution.
         </p>
-        <br/>
-        <br/>
         <br/>
         <p>This website uses the font Open Sans by Steve Matteson. The font can be found at <a href="https://fonts.google.com/specimen/Open+Sans">https://fonts.google.com/specimen/Open+Sans</a>
         <br/>
          Its license is listed below.</p>
+       </div>
+       <table align='center'>
+         <tr>
+           <td>
         <pre>
 
                                  Apache License
@@ -204,6 +206,6 @@
       of your accepting any such warranty or additional liability.
 
    END OF TERMS AND CONDITIONS
-        </pre>
+ </pre></td></tr></table>
     </body>
 </html>
