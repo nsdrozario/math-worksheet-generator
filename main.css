@@ -32,3 +32,10 @@ a {
 a:hover {
   text-decoration: none;
 }
+pre.license{
+    background-color: #e3e3e3;
+    padding: 20px;
+    border: 2px solid #808080;
+    border-radius: 5px;
+    margin: 10px;
+}

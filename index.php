@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <title>Math Worksheet Generator</title>
     <?php
       include 'include/head.php';
     ?>
@@ -23,7 +17,7 @@
     ?>
     <div id='home'>
       <div class='jumbotron text-center'>
-        <h1>Math Worksheet Generator</h1>
+        <h1>Mathmacure</h1>
         <p><h4>A simple solution for math training</h4></p><br/><br/><br/>
         <p><h4><a href='#features' onclick='scrollToAnchor("features")'>Scroll <i class='material-icons'>keyboard_arrow_down</i></a></h4></p>
       </div>
