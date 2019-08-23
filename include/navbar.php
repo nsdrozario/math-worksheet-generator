@@ -6,7 +6,7 @@
         <a class="nav-button" href="worksheet.php">Worksheets</a>
     </nav>
 </div>-->
-<nav style='background-color: transparent' class="navbar fixed-top navbar-expand-md navbar-light" id='navbar'>
+<nav style='background-color: white' class="navbar fixed-top navbar-expand-md navbar-light" id='navbar'>
   <a class="navbar-brand" href="index.php">Mathemacure</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>

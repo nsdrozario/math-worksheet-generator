@@ -2,7 +2,7 @@
   font-family: 'Open Sans', sans-serif;
 }
 #home {
-  background-color: #f0ead6;
+  background-color: white;
   color: black;
   height: 100vh;
   padding: 0 20px;
@@ -16,9 +16,6 @@
   color: black;
   height: 100vh;
 }
-.navbar {
-  background-color: transparent;
-}
 .jumbotron {
   background-color: transparent;
 }
@@ -29,8 +26,10 @@
 a {
   color: black;
 }
+@media (hover:hover) {
 a:hover {
   text-decoration: none;
+}
 }
 pre.license{
     background-color: #e3e3e3;
@@ -38,4 +37,18 @@ pre.license{
     border: 2px solid #808080;
     border-radius: 5px;
     margin: 10px;
+}
+.form-control {
+  width: 200px;
+  text-align: center;
+}
+.form-group {
+  justify-content: center;
+}
+#add_card {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
 }
