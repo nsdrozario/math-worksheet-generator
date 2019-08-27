@@ -1,10 +1,12 @@
 <?php
+$id = $_POST['elem_id'];
 
 $subject_problem = array(
 
 "arithm"=>
     array(
-        "add"=>"\(\FormInput{input1} + \FormInput{input2} = \) _____"
+        "add"=>"\(\FormInput[2][math-input]{" . $id . "[]" . "} + \FormInput[2][math-input]{" . $id . "[]" . "} = \) _____",
+        "sub"=>"\(\FormInput[2][math-input]{" . $id . "[]" . "} - \FormInput[2][math-input]{" . $id . "[]" . "} = \) _____"
         ),
 
 );

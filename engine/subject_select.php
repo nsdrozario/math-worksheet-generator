@@ -14,6 +14,7 @@ ob_start()
     ob_start();    
 ?>
 
+<option value="none">---</option>
 <option value="add">Addition</option>
 <option value="sub">Subtraction</option>
 <option value="mult">Multiplication</option>

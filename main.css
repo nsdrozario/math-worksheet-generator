@@ -39,3 +39,33 @@ pre.license{
     border-radius: 5px;
     margin: 10px;
 }
+
+#menu-1, #menu-2 {
+    width: 50%;
+    float: left;
+}
+
+#menus {
+    display: table;
+}
+
+.card {
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.close-card {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #e3e3e3;
+    width: 30px;
+    height: 30px;
+    transition: background-color 0.2s ease;
+    text-align: center;
+    color: white;
+}
+
+.close-card:hover{
+  background-color: red
+}
