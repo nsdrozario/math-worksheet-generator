@@ -10,11 +10,11 @@
 <body>
     <div id="wrapper">
      <p><pre>Name ______________         Date ______________                                     Period ___</pre></p>
-        <div id="problems"> 
-        
+        <div id="problems">
+
             <?php
 
-            
+
 
             ?>
 

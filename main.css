@@ -38,17 +38,38 @@ pre.license{
     border-radius: 5px;
     margin: 10px;
 }
-.form-control {
-  width: 200px;
-  text-align: center;
-}
-.form-group {
-  justify-content: center;
-}
-#add_card {
+input[type=number] {
   background-color: white;
   color: black;
-  padding: 10px;
-  border: 2px solid black;
-  border-radius: 5px;
+  text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+.card {
+    margin-bottom: 10px;
+    width: 97%;
+}
+
+.close-card {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #e3e3e3;
+    width: 30px;
+    height: 30px;
+    transition: background-color 0.2s ease;
+    text-align: center;
+    color: white;
+}
+
+.close-card:hover{
+  background-color: red;
+  cursor: pointer;
 }

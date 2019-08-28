@@ -1,15 +1,7 @@
-<!--<div id="navbar">
-    <nav id="nav-body">
-        <a class="nav-button" href="index.php">Home</a>
-        <a class="nav-button" href="about.php">About</a>
-        <a class="nav-button" href="support.php">Support</a>
-        <a class="nav-button" href="worksheet.php">Worksheets</a>
-    </nav>
-</div>-->
 <nav style='background-color: white' class="navbar fixed-top navbar-expand-md navbar-light" id='navbar'>
   <a class="navbar-brand" href="index.php">Mathemacure</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
+  <button class='navbar-toggler' type="button" id='button' data-toggle="collapse" data-target="#collapsibleNavbar">
+    <i class='material-icons' id='reverse'>sort</i>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
@@ -28,3 +20,17 @@
     </ul>
   </div>
 </nav>
+<style type='text/css'>
+#button {
+  background-color: white;
+  border: none;
+}
+#reverse {
+
+      -webkit-transform: scale(-1, 1);
+      -moz-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+      -o-transform: scale(-1, 1);
+      transform: scale(-1, 1);
+}
+</style>

@@ -1,6 +1,6 @@
 <?php
 
-$subjects = array();    
+$subjects = array();
 
 ob_start()
 ?>
@@ -9,11 +9,12 @@ ob_start()
 <option value="quadratic-factoring">Factoring quadratics</option>
 
 <?php
-    
+
     $subjects["alg"] = ob_get_clean();
-    ob_start();    
+    ob_start();
 ?>
 
+<option value="none">---</option>
 <option value="add">Addition</option>
 <option value="sub">Subtraction</option>
 <option value="mult">Multiplication</option>
@@ -25,4 +26,3 @@ ob_start()
     echo $subjects[$subject];
 
 ?>
- 

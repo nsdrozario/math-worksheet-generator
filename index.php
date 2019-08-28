@@ -17,7 +17,7 @@
     ?>
     <div id='home'>
       <div class='jumbotron text-center'>
-        <h1>Mathmacure</h1>
+        <h1>Mathemacure</h1>
         <p><h4>A simple solution for math training</h4></p><br/><br/><br/>
         <p><h4><a href='#features' onclick='scrollToAnchor("features")'>Scroll <i class='material-icons'>keyboard_arrow_down</i></a></h4></p>
       </div>
