@@ -97,7 +97,7 @@
                        $p->$id = $i + 1;
                        $p->$problem_type = $_POST['p_' . ($i+1) . '_type'];
 
-                       foreach ($_POST[($i+1)] as $param) {
+                       foreach ($_POST[strval($i+1)] as $param) {
                            array_push($p->$parameters, $param);
                            $p->$param_count = count($p->$parameters);
                        }
