@@ -61,9 +61,24 @@
 
             function remove_problem(id) {
                 var card = document.getElementById(id);
+                var card_id = card.id;
+                card_id = card_id.match(/\d+/g);
                 problem_count--;
-                 $("#problem_c").val(problem_count);
+                $("#problem_c").val(problem_count);
                 card.parentNode.parentNode.parentNode.removeChild(card.parentNode.parentNode);
+
+                // now decrement every number within the div id problems
+
+                var str = document.getElementById("problems").innerHTML;
+                str = str.replace(/(\d+)/g, function (_, num) {
+                    if (parseInt(num) > parseInt(card_id)) {
+                        return parseInt(num) - 1;
+                    } else {
+                        return parseInt(num);
+                    }
+                });
+
+                document.getElementById("problems").innerHTML = str;
             }
             function update_subject() {
                 problem_count = 0;
