@@ -90,11 +90,10 @@
 
        if (isset($_POST['gen_worksheet']) || isset($_POST['gen_answer_key'])) {
                   $req_type = $_POST['gen_worksheet'] ?: $_POST['gen_answer_key'];
-                 $problem_count = $_POST['problem_count'];
+                 $problem_count = intval($_POST['problem_count']);
+                  for ($i = 0; $i<$problem_count; $i++) {
 
-                  for ($i = 0; $i<$problem_count; i++) {
-
-                       /*$p = new Problem;
+                       $p = new Problem;
                        $p->$id = $i + 1;
                        $p->$problem_type = $_POST['p_' . ($i+1) . '_type'];
                        
@@ -103,7 +102,10 @@
                            $p->$param_count = count($p->$parameters);
                        }
 
-                       array_push($problems, $p);*/
+                       array_push($problems, $p);
+                       foreach($problems as $prob) {
+                           echo $prob;
+                       }
                  }
                   
       }
