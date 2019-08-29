@@ -2,14 +2,20 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+
+
 html, body{
     height: 100%;
+    background-color: gray;
+}
+
+#wrapper {
+    width: 8.5in;
+    height: 11in;
+    background-color: white;
 }
 pre {
      font-family: 'Open Sans', sans-serif;
-}
-@page {
-    size: letter;
 }
 
 #wrapper {

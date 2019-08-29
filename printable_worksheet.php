@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="worksheet.css"/>
 </head>
 <body>
-    <div id="wrapper">
+    <div id="wrapper" class="text-center">
      <p><pre>Name ______________         Date ______________                                     Period ___</pre></p>
         <div id="problems">
 
