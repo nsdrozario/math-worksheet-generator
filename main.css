@@ -65,10 +65,10 @@ button {
 }
 button:disabled {
   background-color: white;
-  color: black;
-  border: none;
-  border-radius: none;
-  padding: none;
+  color: gray;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
 }
 input[type=submit] {
   background-color: white;
