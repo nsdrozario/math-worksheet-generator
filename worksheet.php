@@ -84,9 +84,9 @@
     </head>
     <body>
         <?php
-       include 'engine/problem.php';    
+       include 'engine/problem.php';
 
-       $problems = array();        
+       $problems = array();
 
        if (isset($_POST['gen_worksheet']) || isset($_POST['gen_answer_key'])) {
                   $req_type = $_POST['gen_worksheet'] ?: $_POST['gen_answer_key'];
@@ -96,7 +96,7 @@
                        $p = new Problem;
                        $p->$id = $i + 1;
                        $p->$problem_type = $_POST['p_' . ($i+1) . '_type'];
-                       
+
                        foreach ($_POST[($i+1)] as $param) {
                            array_push($p->$parameters, $param);
                            $p->$param_count = count($p->$parameters);
@@ -107,7 +107,7 @@
                            echo $prob;
                        }
                  }
-                  
+
       }
 ?>
 
@@ -122,7 +122,7 @@
          <div id="menus">
 
              <div class='text-center' id="menu-1">
-           <p><h2>Select a subject</h2></p><br/><p><select id="subject" onchange="update_subject()">
+           <p><h2>Select a subject</h2></p><br/><p><select id="subject" class='text-center' onchange="update_subject()">
            <option value="none">---</option>
            <option value="arithm">Arithmetic</option>
            <option value="alg">Algebra</option>
