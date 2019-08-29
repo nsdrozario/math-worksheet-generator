@@ -12,6 +12,7 @@ html, body{
 #wrapper {
     width: 8.5in;
     height: 11in;
+    margin: 0 auto;
     background-color: white;
 }
 pre {

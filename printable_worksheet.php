@@ -39,7 +39,7 @@
 ?>
 
         </div>
-    <footer style="text-align: center;">Mathmacure © 2019</footer>
+    <footer style="text-align: center;">© 2019 Nishchal Shukla and Nathaniel D'Rozario</footer>
     </div>
 </body>
 </html>
