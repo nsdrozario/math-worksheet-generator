@@ -1,12 +1,3 @@
-<?php
-
-       if (isset($_POST['gen_worksheet']) || isset($_POST['gen_answer_key'])) {
-                  $req_type = $_POST['gen_worksheet'] ?: $_POST['gen_answer_key'];
-                  $problem_count = $_POST['problem_count'];
-       } else {
-           // do nothing
-       }
-?>
 
 
 <!DOCTYPE html>
@@ -46,7 +37,7 @@
                 var val_1 = $("#upper_bound").val();
                 var val_2 = $("#lower_bound").val();
 
-                if (val_2 >= val_1) {
+                if (parseInt(val_2) >= parseInt(val_1)) {
                     $("#randomize-inputs").prop("disabled", true);
                 } else {
                     $("#randomize-inputs").prop("disabled", false);
@@ -71,6 +62,7 @@
             function remove_problem(id) {
                 var card = document.getElementById(id);
                 problem_count--;
+                 $("#problem_c").val(problem_count);
                 card.parentNode.parentNode.parentNode.removeChild(card.parentNode.parentNode);
             }
             function update_subject() {
@@ -91,6 +83,32 @@
 
     </head>
     <body>
+        <?php
+       include 'engine/problem.php';    
+
+       $problems = array();        
+
+       if (isset($_POST['gen_worksheet']) || isset($_POST['gen_answer_key'])) {
+                  $req_type = $_POST['gen_worksheet'] ?: $_POST['gen_answer_key'];
+                 $problem_count = $_POST['problem_count'];
+
+                  for ($i = 0; $i<$problem_count; i++) {
+
+                       /*$p = new Problem;
+                       $p->$id = $i + 1;
+                       $p->$problem_type = $_POST['p_' . ($i+1) . '_type'];
+                       
+                       foreach ($_POST[($i+1)] as $param) {
+                           array_push($p->$parameters, $param);
+                           $p->$param_count = count($p->$parameters);
+                       }
+
+                       array_push($problems, $p);*/
+                 }
+                  
+      }
+?>
+
         <?php
             include 'include/navbar.php';
         ?>
@@ -130,7 +148,7 @@
                 <div id="problems">
                  </div>
                 <input type="hidden" name="problem_count" id="problem_c" value="0"/><br/>
-                <p><input type="checkbox" name="print_on_open"/>  <label for="print_on_open">Show print dialog on preview</label></p>
+                <p><input type="checkbox" name="print_on_open" id="print_on_open"/>  <label for="print_on_open">Show print dialog on preview</label></p>
                 <br/>
                 <p><input type="submit" name="gen_worksheet" value="Generate worksheet"/></p>
                 <p><input type="submit" name="gen_answer_key" value="Generate answer key"/></p>
