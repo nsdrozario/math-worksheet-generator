@@ -9,6 +9,12 @@ html, body{
     background-color: gray;
 }
 
+
+@page {
+    size: letter portrait;
+}
+
+
 #wrapper {
     width: 8.5in;
     height: 11in;

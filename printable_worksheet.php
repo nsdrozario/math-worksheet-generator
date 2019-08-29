@@ -35,6 +35,12 @@
                     
                  }
 
+
+                 foreach($problems as $prob=>$index){
+                        // $index + 1 is problem id
+                        // figure out how many problems in one column
+                        // echo "insert_problem_here"; // extract info from problem class to create render
+                 }
       }
 ?>
 
