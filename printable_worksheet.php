@@ -10,7 +10,7 @@
 <body>
     <div id="wrapper" class="text-center">
      <p><pre>Name ______________         Date ______________                                     Period ___</pre></p>
-        <div id="problems">
+        <div id="problems" class="row">
 
            <?php
        include 'engine/problem.php';
@@ -43,6 +43,18 @@
                  }
       }
 ?>
+
+                 <div class="col-md-6">
+                      <p id="hint">1.  Solve for x.</p>
+                \( 2x+5=10 \)
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+               
+              
+                
+        </div>
 
         </div>
     <footer style="text-align: center;">© 2019 Nishchal Shukla and Nathaniel D'Rozario</footer>
