@@ -1,5 +1,6 @@
 * {
   font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
 }
 
 
@@ -35,6 +36,17 @@ pre {
 }
 
 @media print {
+    
+    * {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
+}
+
+
+    #wrapper {
+      padding: 0.1in 0.5in 0.1in 0.5in;
+}
+    
     pre {
         border-style: none;
         font-family: 'Open Sans', sans-serif;
