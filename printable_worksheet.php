@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="wrapper" class="text-center">
-     <p><pre>Name ______________         Date ______________                                     Period ___</pre></p>
+     <p><pre>Name ______________         Date ______________                                     Period ___</pre></p><br/>
         <div id="problems" class="row">
 
            <?php
@@ -39,7 +39,7 @@
                         // figure out how many problems in one column
                         // extract info from problem class to create render
                         echo '<div class="col-sm-6">';
-                        echo '<p id="'.($prob->id + 1).'">'.(strval($prob->id + 1)).'. '.(strval($prob->parameters[0])).' + '.(strval($prob->parameters[1])).'</p>';
+                        echo '<p id="'.($prob->id + 1).'">'.(strval($prob->id)).'. '.(strval($prob->parameters[0])).' + '.(strval($prob->parameters[1])).'</p>';
                         echo '</div>';
                  }
       }
