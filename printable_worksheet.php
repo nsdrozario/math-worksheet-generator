@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="worksheet.css"/>
 </head>
 <body>
-    <div id="wrapper" class="text-center">
+    <div id="wrapper" class="text-center"><br/>
      <p><pre>Name ______________         Date ______________                                     Period ___</pre></p><br/>
         <div id="problems" class="row">
 
@@ -38,19 +38,21 @@
                         // $index + 1 is problem id
                         // figure out how many problems in one column
                         // extract info from problem class to create render
-                        echo '<div class="col-sm-6">';
-                        echo '<p id="'.($prob->id + 1).'">'.(strval($prob->id)).'. '.(strval($prob->parameters[0])).' + '.(strval($prob->parameters[1])).'</p>';
+                        echo '<div class="unresponsive">';
+                        echo '<p id="'.($prob->id).'">'.(strval($prob->id)).'.  \('.(strval($prob->parameters[0])).' + '.(strval($prob->parameters[1])).'\)</p>';
                         echo '</div>';
                  }
       }
 ?>
-
-                 <div class="col-md-6">
+                <!--
+            <div class="col-md-6">
                       <p id="hint">1.  Solve for x.</p>
                 \( 2x+5=10 \)
                 </div>
                 <div class="col-md-6">
                 </div>
+            -->
+
             </div>
 
 
