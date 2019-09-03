@@ -14,7 +14,6 @@
 
            <?php
        include 'engine/problem.php';
-
        $problems = array();
 
        if (isset($_POST['gen_worksheet']) || isset($_POST['gen_answer_key'])) {
@@ -32,14 +31,17 @@
                        }
 
                        array_push($problems, $p);
-                    
+
                  }
 
 
                  foreach($problems as $prob=>$index){
                         // $index + 1 is problem id
                         // figure out how many problems in one column
-                        // echo "insert_problem_here"; // extract info from problem class to create render
+                        // extract info from problem class to create render
+                        echo '<div class="col-sm-6">';
+                        echo '<p id="'.($prob + 1).'">'.(strval($prob + 1)).'. '.(strval($p->parameters[0])).' + '.(strval($p->parameters[1])).'</p>';
+                        echo '</div>';
                  }
       }
 ?>
@@ -51,9 +53,9 @@
                 <div class="col-md-6">
                 </div>
             </div>
-               
-              
-                
+
+
+
         </div>
 
         </div>
