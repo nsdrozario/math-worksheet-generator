@@ -42,7 +42,11 @@ pre {
 
 }
 
-
+.unresponsive {
+    width: 45%;
+    padding-right: 10%;
+    padding-left: 5%;
+}
 
 footer{
     position: absolute;
