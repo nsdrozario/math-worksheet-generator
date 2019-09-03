@@ -15,7 +15,6 @@
            <?php
        include 'engine/problem.php';
        $problems = array();
-
        if (isset($_POST['gen_worksheet']) || isset($_POST['gen_answer_key'])) {
                   $req_type = $_POST['gen_worksheet'] ?: $_POST['gen_answer_key'];
                  $problem_count = intval($_POST['problem_count']);
@@ -25,7 +24,7 @@
                        $p->id = $i + 1;
                        $p->problem_type = $_POST['p_' . ($i+1) . '_type'];
 
-                       foreach ($_POST[strval($i+1)] as $param) {
+                       foreach ($_POST[strval($i+1) . "_p"] as $param) {
                            array_push($p->parameters, $param);
                            $p->param_count = count($p->parameters);
                        }
@@ -35,12 +34,12 @@
                  }
 
 
-                 foreach($problems as $prob=>$index){
+                 foreach($problems as $prob){
                         // $index + 1 is problem id
                         // figure out how many problems in one column
                         // extract info from problem class to create render
                         echo '<div class="col-sm-6">';
-                        echo '<p id="'.($prob + 1).'">'.(strval($prob + 1)).'. '.(strval($p->parameters[0])).' + '.(strval($p->parameters[1])).'</p>';
+                        echo '<p id="'.($prob->id + 1).'">'.(strval($prob->id + 1)).'. '.(strval($prob->parameters[0])).' + '.(strval($prob->parameters[1])).'</p>';
                         echo '</div>';
                  }
       }

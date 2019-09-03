@@ -5,8 +5,8 @@ $subject_problem = array(
 
 "arithm"=>
     array(
-        "add"=>"\(\FormInput[2][math-input]{" . $id . "[]" . "} + \FormInput[2][math-input]{" . $id . "[]" . "} = \) _____",
-        "sub"=>"\(\FormInput[2][math-input]{" . $id . "[]" . "} - \FormInput[2][math-input]{" . $id . "[]" . "} = \) _____"
+        "add"=>"\(\FormInput[2][math-input]{" . $id . "_p[]" . "} + \FormInput[2][math-input]{" . $id . "_p[]" . "} = \) _____",
+        "sub"=>"\(\FormInput[2][math-input]{" . $id . "_p[]" . "} - \FormInput[2][math-input]{" . $id . "_p[]" . "} = \) _____"
         ),
 
 );
