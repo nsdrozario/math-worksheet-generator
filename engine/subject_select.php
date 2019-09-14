@@ -2,10 +2,10 @@
 
 $subjects = array();
 
-ob_start()
+ob_start();
 ?>
-
-<option value="linear-constant-solve-x">Solve for x in linear function equal to constant</option>
+<option value="none">---</option>
+<option value="linear-solve-x">Solve for x, linear functions</option>
 <option value="quadratic-factoring">Factoring quadratics</option>
 
 <?php
@@ -22,6 +22,7 @@ ob_start()
 
 <?php
     $subjects["arithm"] = ob_get_clean();
+
     $subject = $_POST['subject'];
     echo $subjects[$subject];
 

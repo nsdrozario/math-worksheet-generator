@@ -6,7 +6,7 @@
 <script>
     MathJax.Hub.Config({
   TeX: {
-    extensions: ["https://cdn.jsdelivr.net/gh/leathrum/mathjax-ext-contrib/forminput/forminput.js"]
+    extensions: ["http://localhost:23555/forminput.js"]
   }
 });
 </script>

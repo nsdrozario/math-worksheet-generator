@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8"/>
@@ -14,8 +14,9 @@
 
            <?php
        include 'engine/problem.php';
-       $problems = array();
+       include 'engine/problem_format.php';
        if (isset($_POST['gen_worksheet']) || isset($_POST['gen_answer_key'])) {
+                  $problems = array();
                   $req_type = $_POST['gen_worksheet'] ?: $_POST['gen_answer_key'];
                  $problem_count = intval($_POST['problem_count']);
                   for ($i = 0; $i<$problem_count; $i++) {
@@ -23,25 +24,26 @@
                        $p = new Problem;
                        $p->id = $i + 1;
                        $p->problem_type = $_POST['p_' . ($i+1) . '_type'];
-
                        foreach ($_POST[strval($i+1) . "_p"] as $param) {
                            array_push($p->parameters, $param);
                            $p->param_count = count($p->parameters);
                        }
 
                        array_push($problems, $p);
-
                  }
-
-
                  foreach($problems as $prob){
-                        // $index + 1 is problem id
-                        // figure out how many problems in one column
-                        // extract info from problem class to create render
                         echo '<div class="unresponsive">';
-                        echo '<p id="'.($prob->id).'">'.(strval($prob->id)).'.  \('.(strval($prob->parameters[0])).' + '.(strval($prob->parameters[1])).'\)</p>';
+                         
+                        $prob_info = $format[($prob->problem_type)];
+
+                        for ($i = 0; $i < ($prob->param_count); $i++) {
+                            $prob_info = preg_replace('/a/', $prob->parameters[$i], $prob_info, 1);
+                        }
+                       
+                        echo $prob->id . ". \(" . $prob_info . "\)";
+
                         echo '</div>';
-                 }
+                    }
       }
 ?>
                 <!--
