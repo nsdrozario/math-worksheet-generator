@@ -2,13 +2,7 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 14pt;
 }
-
-
-
-
-
-
-@page {
+  @page {
     size: letter portrait;
 }
 
@@ -21,6 +15,22 @@ pre {
      font-family: 'Open Sans', sans-serif;
 }
 
+
+#menu {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+    #print {
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+        background: #1c5dc4 url("icons/print.png") no-repeat center center;
+    }
+    #print:active {
+    background: #3d7ee5 url("icons/print.png") no-repeat center center;
+    }
     #wrapper {
     width: 8.5in;
     height: 11in;
@@ -33,18 +43,27 @@ pre {
   min-height: 100%;
     box-shadow: 20px 20px 10px #474747;
     }
+
+
 }
 
 @media print {
-    
+  
     * {
   font-family: 'Open Sans', sans-serif;
   font-size: 14pt;
 }
 
+#menu {
+    display: none;
+}
+body {
+    width: 8.5in;
+    height: 11in;
+}
 
     #wrapper {
-      padding: 0.1in 0.5in 0.1in 0.5in;
+      padding: 0.05in 0.5in 0.05in 0.5in;
 }
     
     pre {
@@ -55,10 +74,20 @@ pre {
 
 }
 
+
 .unresponsive {
     width: 45%;
     padding-right: 10%;
     padding-left: 5%;
+    padding-bottom: 15%;
+}
+
+.unresponsive-answer{
+      width: 45%;
+    padding-right: 10%;
+    padding-left: 5%;
+    padding-bottom: 15%;
+   /* font-size: 20pt;*/
 }
 
 footer{
