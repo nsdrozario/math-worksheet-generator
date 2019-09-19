@@ -143,7 +143,8 @@
                 <p><input type="submit" name="gen_answer_key" value="Generate answer key"/></p>
                 </div>
             </form>
-
-
+            <?php
+            include 'footer.php';
+             ?>
     </body>
 </html>
