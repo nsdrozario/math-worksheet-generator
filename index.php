@@ -19,7 +19,7 @@
       <div class='jumbotron text-center'>
         <h1>Mathemacure</h1>
         <p><h4>A simple solution for math training</h4></p><br/><br/><br/>
-        <p><h4><a href='#features' onclick='scrollToAnchor("features")'>Scroll <i class='material-icons'>keyboard_arrow_down</i></a></h4></p>
+        <p><h4><a href='#features' onclick='scrollToAnchor("features")'>Scroll<span class='rotate'>></span></a></h4></p>
       </div>
     </div>
     <div id='features'>
@@ -36,7 +36,7 @@
                 </div>
               </div><br/><br/>
         <div class='jumbotron text-center'>
-          <p><h4><a href='#home' onclick='scrollToAnchor("home")'>Back to Top <i class='material-icons'>keyboard_arrow_up</i></a></h4></p>
+          <p><h4><a href='#home' onclick='scrollToAnchor("home")'>Back to Top<span class='rotate'><</span></a></h4></p>
         </div>
         </div>
       </div>

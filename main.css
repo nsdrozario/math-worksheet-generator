@@ -93,3 +93,6 @@ input[type=submit] {
   background-color: red;
   cursor: pointer;
 }
+.rotate {
+  writing-mode:vertical-rl;
+}
