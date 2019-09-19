@@ -117,6 +117,7 @@
            <option value="calc">Calculus</option>
         </select></p>
       </div>
+    </div>
       <div class='container text-center'>
               <div class='row text-center'>
                 <div class='col-md-6'>
@@ -137,13 +138,11 @@
                 <div id="problems">
                  </div>
                 <input type="hidden" name="problem_count" id="problem_c" value="0"/><br/>
-                <p><input type="checkbox" name="print_on_open" id="print_on_open"/>  <label for="print_on_open">Show print dialog on preview</label></p>
                 <br/>
                 <p><input type="submit" name="gen_worksheet" value="Generate worksheet"/></p>
                 <p><input type="submit" name="gen_answer_key" value="Generate answer key"/></p>
-        </div>
-
-
+                </div>
+            </form>
 
 
     </body>
