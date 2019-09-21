@@ -144,7 +144,7 @@
                 </div>
             </form>
             <?php
-            include 'footer.php';
+            include 'include/footer.php';
              ?>
     </body>
 </html>
