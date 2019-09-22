@@ -25,7 +25,7 @@
  *  limitations under the License.
  *
  *
- *  This file been modified by Nathaniel D'Rozario at September 4th, 2019 at 1:51 PM Pacific Daylight Time. The modification in question 
+ *  This file been modified by Nathaniel D'Rozario at September 21st, 2019 at 6:05 PM Pacific Daylight Time. The modification in question 
  *  is changing the string value for the call to MathJax.Ajax.loadComplete() at the end of this script. The modifications are also under the Apache License Version 2.0.
  *
  *  Modifications copyright (C) 2019 Nathaniel D'Rozario.
@@ -43,4 +43,4 @@
  *  limitations under the License.
  *
  */
-MathJax.Callback.Queue(MathJax.Hub.Register.StartupHook("TeX Jax Ready",function(){var t=MathJax.InputJax.TeX,a=t.Definitions,e=MathJax.ElementJax.mml,n=MathJax.HTML;a.macros.FormInput="FormInput",t.Parse.Augment({FormInput:function(t){var a=this.GetBrackets(t),i=this.GetBrackets(t),m=this.GetBrackets(t),s=this.GetArgument(t);(null==a||""===a)&&(a="2"),null==m&&(m=""),i=("MathJax_Input "+(i||"")).replace(/ +$/,"");var l=n.Element("input",{type:"text",name:s,id:s,size:a,className:i,value:m});l.setAttribute("xmlns","http://www.w3.org/1999/xhtml");var r=e["annotation-xml"](e.xml(l)).With({encoding:"application/xhtml+xml",isToken:!0});this.Push(e.semantics(r))}})})),MathJax.Ajax.loadComplete("http://localhost:23555/forminput.js");
+MathJax.Callback.Queue(MathJax.Hub.Register.StartupHook("TeX Jax Ready",function(){var t=MathJax.InputJax.TeX,a=t.Definitions,e=MathJax.ElementJax.mml,n=MathJax.HTML;a.macros.FormInput="FormInput",t.Parse.Augment({FormInput:function(t){var a=this.GetBrackets(t),i=this.GetBrackets(t),m=this.GetBrackets(t),s=this.GetArgument(t);(null==a||""===a)&&(a="2"),null==m&&(m=""),i=("MathJax_Input "+(i||"")).replace(/ +$/,"");var l=n.Element("input",{type:"text",name:s,id:s,size:a,className:i,value:m});l.setAttribute("xmlns","http://www.w3.org/1999/xhtml");var r=e["annotation-xml"](e.xml(l)).With({encoding:"application/xhtml+xml",isToken:!0});this.Push(e.semantics(r))}})})),MathJax.Ajax.loadComplete("http://mathemacure.me/forminput.js");

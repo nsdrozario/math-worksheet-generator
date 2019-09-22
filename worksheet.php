@@ -109,12 +109,12 @@
          <div id="menus">
 
              <div class='text-center' id="menu-1">
-           <p><h2>Select a subject</h2></p><br/><p><select id="subject" class='text-center' onchange="update_subject()">
+           <h2>Select a subject</h2><br/><p><select id="subject" class='text-center' onchange="update_subject()">
            <option value="none">---</option>
            <option value="arithm">Arithmetic</option>
            <option value="alg">Algebra</option>
-           <option value="precalc">Precalculus</option>
-           <option value="calc">Calculus</option>
+           <!-- <option value="precalc">Precalculus</option>
+           <option value="calc">Calculus</option> -->
         </select></p>
       </div>
     </div>

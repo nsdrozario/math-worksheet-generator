@@ -1,7 +1,7 @@
 <nav style='background-color: white' class="navbar fixed-top navbar-expand-md navbar-light" id='navbar'>
   <a class="navbar-brand" href="index.php">Mathemacure</a>
   <button class='navbar-toggler' type="button" id='button' data-toggle="collapse" data-target="#collapsibleNavbar">
-    <i id='reverse'>&#9776;</i>
+    <span id='reverse'>&#9776;</span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">

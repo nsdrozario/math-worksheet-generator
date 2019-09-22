@@ -18,21 +18,21 @@
     <div id='home'>
       <div class='jumbotron text-center'>
         <h1>Mathemacure</h1>
-        <p><h4>A simple solution for math training</h4></p><br/><br/><br/>
-        <p><h4><a href='#features' onclick='scrollToAnchor("features")'>Scroll<span class='rotate'>></span></a></h4></p>
+        <h4>A simple solution for math training</h4><br/><br/><br/>
+        <h4><a href='#features' onclick='scrollToAnchor("features")'>Scroll<span class='rotate'>></span></a></h4>
       </div>
     </div>
     <div id='features'>
       <br/>
-      <div class='jumbotron text-center'><h1>Features</h1></div>
+      <div class='jumbotron text-center'><h1>Why Mathemacure?</h1></div>
       <div class='row'>
         <div class="col-md-6 text-center">
-                        <p><h2>Online</h2></p><br/>
-                        <p><h4>This service is 100% online and requires no downloads.</h4></p>
+                        <h2>Online</h2><br/>
+                        <h4>This service is 100% online and requires no downloads.</h4>
                 </div><br/><br/>
                  <div class='col-md-6 text-center'>
-                     <p><h2>Test Mode</h2></p><br/>
-                     <p><h4>Automatically generate multiple forms and answer keys with shown work.</h4></p>
+                     <h2>Perfect for testing</h2><br/>
+                     <h4>Randomize problem parameters and generate answer keys.</h4>
                 </div>
               </div><br/><br/>
         <div class='jumbotron text-center'>
