@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="wrapper" class="text-center">
-     <p><pre><?php if (isset($_POST['gen_answer_key'])) { echo "<span style='wdith:100%;'>Answers</span>"; }?></pre></p>
+     <p><pre><?php if (isset($_POST['gen_answer_key'])) { echo "<span style='wdith:100%;'>Answers</span>"; } else { echo "<pre>Name ______________         Date ______________                                     Period ___</pre>";}?></pre></p>
         <div id="problems" class="row">
 
            <?php
