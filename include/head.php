@@ -14,3 +14,4 @@
     <title>Mathemacure</title>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 <link href="main.css" rel="stylesheet"/>
+<meta name="google-site-verification" content="P48RQ30mnW1cIWCkYfBihhCg0IrvJCcWImRcGKpsqC4" />
