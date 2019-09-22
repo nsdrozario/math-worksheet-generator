@@ -1,7 +1,7 @@
-<br/><br/>
+<br/><br/><br/><br/><br/><br/>
 <footer class='text-center' id='footer'>
     <p class="bold">
-    As of September 21, 2019, 8:51 PM Pacific Daylight Time, the Terms of Service have been changed. 
+    As of September 21, 2019, 8:51 PM Pacific Daylight Time, the Terms of Service have been changed.
     <br/>
     Continued use of Mathemacure and its services constitutes as agreement of these terms. Please
     <br/>
