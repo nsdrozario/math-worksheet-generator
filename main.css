@@ -5,6 +5,9 @@
   background-color: white;
   border: none;
 }
+.bold {
+    font-weight: bold;
+}
 #reverse {
 
       -webkit-transform: scale(-1, 1);
