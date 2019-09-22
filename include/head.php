@@ -6,7 +6,7 @@
 <script>
     MathJax.Hub.Config({
   TeX: {
-    extensions: ["http://localhost/math-worksheet-generator/forminput.js"]
+    extensions: ["http://mathemacure.me/forminput.js"]
   }
 });
 </script>
