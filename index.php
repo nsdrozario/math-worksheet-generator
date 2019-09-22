@@ -19,7 +19,7 @@
       <div class='jumbotron text-center'>
         <h1>Mathemacure</h1>
         <h4>A simple solution for math training</h4><br/><br/><br/>
-        <h4><a href='#features' onclick='scrollToAnchor("features")'>Scroll<span class='rotate'>&rt</span></a></h4>
+        <h4><a href='#features' onclick='scrollToAnchor("features")'>Scroll<span class='rotate'>&gt</span></a></h4>
       </div>
     </div>
     <div id='features'>
