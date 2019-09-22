@@ -23,7 +23,7 @@ $answer = array(
     }
     $gcd = gcd(($args[2] - $args[1]), $args[0]);
     if (intval($ans) != $ans) {
-        return $sign . "\\frac{" . abs($args[2] - $args[1]) / $gcd  . "}{" . abs($args[0]) / $gcd . "}";
+        return $sign . "\\frac{" . abs(($args[2] - $args[1])/$gcd)   . "}{" . abs($args[0]/ $gcd) . "}";
     } else {
         return $ans;
     }

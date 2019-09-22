@@ -5,6 +5,5 @@
     <a target="_blank" class='allow footer-link' href="termsofservice.php">Terms of Service</a>
     <a target="_blank" class='allow footer-link' href="privacypolicy.php">Privacy Policy</a>
     <a target="_blank" class='allow footer-link' href='about.php'>Attributions</a>
-
 </p>
 </footer>
