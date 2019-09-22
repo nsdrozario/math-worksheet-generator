@@ -94,7 +94,7 @@ END OF TERMS AND CONDITIONS
 
 Furthermore, the extension forminput for the MathJax library has been modified by Nathaniel D'Rozario for the purposes of use in the Mathemacure website.
 The modification in question is changing the string value for the call to MathJax.Ajax.loadComplete() at the end of this script. The modifications are also under the Apache License Version 2.0.
-For more details, please visit forminput.js inside this website. The license for the modifications of the forminput extension for the MathJax library are listed below.
+For more details, please visit the forminput.js file inside this website. The license for the modifications of the forminput extension for the MathJax library are listed below.
 
                                 Apache License
                            Version 2.0, January 2004
