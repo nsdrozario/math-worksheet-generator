@@ -26,10 +26,10 @@ pre {
         width: 64px;
         height: 64px;
         border-radius: 32px;
-        background: #1c5dc4 url("icons/print.png") no-repeat center center;
+        background: #1c5dc4 url("icon/print.png") no-repeat center center;
     }
     #print:active {
-    background: #3d7ee5 url("icons/print.png") no-repeat center center;
+    background: #3d7ee5 url("icon/print.png") no-repeat center center;
     }
     #wrapper {
     width: 8.5in;

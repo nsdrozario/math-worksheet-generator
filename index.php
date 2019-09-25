@@ -17,13 +17,17 @@
       include 'include/navbar.php';
     ?>
     <div id='home'>
-      <div class='jumbotron' id='standout'>
-        <h2 id='smaller'>Mathemacure</h2><br/>
-        <h4>A simple solution for math training</h4><br/>
-        <h5><a href='worksheet.php' id='start'>Get Started</a></h5>
+      <div class='jumbotron text-center'>
+        <h1>Mathemacure</h1>
+        <h4>The ultimate solution for math worksheet generation</h4><br/><br/><br/>
       </div>
     </div>
     <div id='features'>
+        <div class="jumbotron text-center"><h1>What is Mathemacure?</h1></div>
+        <div class="text-center">
+            <p>Mathemacure is a versatile worksheet generator that can quickly generate printable worksheets and answer keys.
+            </p>
+        </div>
       <br/>
       <div class='jumbotron text-center' id='why'><h2>Why Mathemacure?</h2></div>
       <div class='row'>
