@@ -18,11 +18,15 @@
     <div id='home'>
       <div class='jumbotron text-center'>
         <h1>Mathemacure</h1>
-        <h4>A simple solution for math training</h4><br/><br/><br/>
-        <h4><a href='#features' onclick='scrollToAnchor("features")'>Scroll<span class='rotate'>&gt</span></a></h4>
+        <h4>The ultimate solution for math worksheet generation</h4><br/><br/><br/>
       </div>
     </div>
     <div id='features'>
+        <div class="jumbotron text-center"><h1>What is Mathemacure?</h1></div>
+        <div class="text-center">
+            <p>Mathemacure is a versatile worksheet generator that can quickly generate printable worksheets and answer keys.
+            </p>
+        </div>
       <br/>
       <div class='jumbotron text-center'><h1>Why Mathemacure?</h1></div>
       <div class='row'>
