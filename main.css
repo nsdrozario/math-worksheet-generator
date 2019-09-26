@@ -1,0 +1,135 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+#button {
+  background-color: white;
+  border: none;
+}
+.bold {
+    font-weight: bold;
+}
+#reverse {
+
+      -webkit-transform: scale(-1, 1);
+      -moz-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+      -o-transform: scale(-1, 1);
+      transform: scale(-1, 1);
+}
+#home {
+  background-image: url('background.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+  color: black;
+  height: 100vh;
+  padding: 0 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#features {
+  background-color: white;
+  color: black;
+  height: 100vh;
+}
+.jumbotron{
+    background-color: rgba(0,0,0,0);
+}
+#standout{
+  background-color: white;
+  border: 5px solid gray;
+  border-radius: 2px;
+}
+.col-md-4 {
+  padding-bottom: 50px;
+  color: white;
+}
+a {
+  color: black;
+}
+@media (hover:hover) {
+a:hover {
+  text-decoration: none;
+}
+}
+
+pre.license{
+    background-color: #e3e3e3;
+    padding: 20px;
+    border: 2px solid #808080;
+    border-radius: 5px;
+    margin: 10px;
+}
+input[type=number] {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+.card {
+    margin-bottom: 10px;
+    width: 97%;
+}
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+button:disabled {
+  background-color: white;
+  color: gray;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+input[type=submit] {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+.close-card {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #e3e3e3;
+    width: 30px;
+    height: 30px;
+    transition: background-color 0.2s ease;
+    text-align: center;
+    color: white;
+}
+
+.close-card:hover{
+  background-color: red;
+  cursor: pointer;
+}
+.rotate {
+  writing-mode:vertical-rl;
+}
+.allow {
+  text-decoration: underline;
+  color: blue;
+}
+.footer-link {
+      padding-left: 20px;
+}
+#footer {
+  padding: 10px;
+  margin: 10px;
+  background-color: #e3e3e3;
+}
