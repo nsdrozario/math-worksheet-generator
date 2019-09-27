@@ -148,6 +148,7 @@
                 </div>
             </form>
             <?php
+            include 'include/cookie_footer.php';
             include 'include/footer.php';
              ?>
     </body>

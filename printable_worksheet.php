@@ -99,6 +99,8 @@
         <div id="print" onclick="window.print();">
         </div>
     </div>
-
+    <?php
+    include 'include/cookie_footer.php';
+    ?>
 </body>
 </html>
