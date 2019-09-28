@@ -15,7 +15,7 @@
           var cookies = decodeURIComponent(document.cookie).split(";");
           function check_agreement() {
               for (var i = 0; i < cookies.length; i++) {
-                  if (cookies[i] == " read_cookie_agreement=true") {
+                  if (cookies[i] == "read_cookie_agreement=true") {
                       cookie_footer.style.display = "none";
                   } else {
                       cookie_footer.style.display = "block";
