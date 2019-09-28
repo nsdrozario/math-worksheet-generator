@@ -25,6 +25,7 @@
           check_agreement();
           function close_footer() {
               document.cookie = "read_cookie_agreement=true";
+              cookies = decodeURIComponent(document.cookie).split(";");
               check_agreement();
           }
       </script>
