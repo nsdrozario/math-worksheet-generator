@@ -5,8 +5,9 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'></script>
 <script>
     MathJax.Hub.Config({
+        root: "https://mathemacure.me",
   TeX: {
-    extensions: ["http://mathemacure.me/forminput.js"]
+    extensions: ["forminput.js"]
   }
 });
 </script>
