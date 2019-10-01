@@ -32,7 +32,7 @@
 <br/>
 Furthermore, Mathemacure does not utilize a database to store any data we collect from you. Thus, the only data stored from you will be on cloud server's random access memory.
 <br/>
-To Mathemacure's best knowledge, your data is sent to no other third party. However, your data is processed using MathJax, a client-side JavaScript library that runs on your computer, and an extension for that library called forminput. More details can be found at the MathJax website and the forminput repository page.
+Mathemacure does not send your data to other third parties. However, your data is processed using MathJax, a client-side JavaScript library that runs on your computer, and an extension for that library called forminput. More details can be found at the MathJax website and the forminput repository page.
 Therefore, no data inputted into our website should be kept indefinetly. Cookies, however, follow a different set of rules.
 <br/>
 However, the user is responsible for any input or action that disrupts the Mathemacure system or compromises the security of Mathemacure or any users using Mathemacure and is responsible for providing relevant and usable input into our services. Additionally, due to the lack of collection of personal data in the Mathemacure website, you are not able to change your information.
