@@ -133,8 +133,8 @@
                    </div>
                  </div><br/>
 
-                      <p><button id="randomize-inputs" onclick="randomize($('#upper_bound').val(), $('#lower_bound').val())">Randomize inputs</button></p><br/>
-                          <p><button id="add_card" onclick="addCard()" disabled>Add problem</button></p><br/>
+                      <p><button id="randomize-inputs" class="btn-mathemacure" onclick="randomize($('#upper_bound').val(), $('#lower_bound').val())">Randomize inputs</button></p><br/>
+                          <p><button id="add_card" class="btn-mathemacure" onclick="addCard()" disabled>Add problem</button></p><br/>
 </div>
 
         <div id="problem_cards" class='text-center'>
@@ -143,8 +143,8 @@
                  </div>
                 <input type="hidden" name="problem_count" id="problem_c" value="0"/><br/>
                 <br/>
-                <p><input type="submit" name="gen_worksheet" value="Generate worksheet"/></p>
-                <p><input type="submit" name="gen_answer_key" value="Generate answer key"/></p>
+                <p><input type="submit" class="btn-mathemacure" name="gen_worksheet" value="Generate worksheet"/></p>
+                <p><input type="submit" class="btn-mathemacure" name="gen_answer_key" value="Generate answer key"/></p>
                 </div>
             </form>
             <?php

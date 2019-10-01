@@ -8,7 +8,19 @@
 .bold {
     font-weight: bold;
 }
+.btn-mathemacure {
+    background-color: #0059b3;
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    transition: background-color 200ms;
+}
 
+.btn-mathemacure[id!=add_card]:hover {
+    background-color: #3399ff;
+    color: white;
+}
 #cookie-footer {
     position: fixed;
     bottom: 5px;
@@ -134,7 +146,7 @@ button:disabled {
   border: 2px solid black;
   border-radius: 5px;
   padding: 10px;
-}
+}/*
 input[type=submit] {
   background-color: white;
   color: black;
@@ -142,11 +154,12 @@ input[type=submit] {
   border-radius: 5px;
   padding: 10px;
 }
+      */
 .close-card {
     position: absolute;
     top: 0px;
     right: 0px;
-    background-color: #e3e3e3;
+    background-color: red;
     width: 30px;
     height: 30px;
     transition: background-color 0.2s ease;
