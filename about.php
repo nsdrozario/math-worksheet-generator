@@ -15,10 +15,12 @@
                <pre class="license">
 <?php 
 echo file_get_contents("NOTICE.txt");
-
-include 'include/cookie_footer.php';
-include 'include/footer.php';
 ?>
                </pre>
+        <?php
+        
+include 'include/cookie_footer.php';
+include 'include/footer.php';
+        ?>
     </body>
 </html>
