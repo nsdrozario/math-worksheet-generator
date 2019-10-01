@@ -16,7 +16,7 @@
         <br/>
         <h2>Privacy Policy</h2>
         <h3>I. Introduction</h3>
-<p>Your privacy is important to us. It is Mathemacure's policy to respect your privacy regarding any information we may collect from you across our website, <a class="allow" href="http://mathemacure.me">http://mathemacure.me</a>, and other sites we own and operate.</p>
+<p>Your privacy is important to us. It is Mathemacure's policy to respect your privacy regarding any information we may collect from you across our website, <a class="allow" href="https://mathemacure.me">https://mathemacure.me</a>, and other sites we own and operate.</p>
 <p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.</p>
 <p>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification.</p>
 <p>We don’t share any personally identifying information publicly or with third-parties, except when required to by law.</p>
@@ -32,7 +32,7 @@
 <br/>
 Furthermore, Mathemacure does not utilize a database to store any data we collect from you. Thus, the only data stored from you will be on cloud server's random access memory.
 <br/>
-Mathemacure does not send your data to other third parties. However, your data is processed using MathJax, a client-side JavaScript library that runs on your computer, and an extension for that library called forminput. More details can be found at the MathJax website and the forminput repository page.
+Mathemacure does not send your data to other third parties. However, your data is processed using MathJax, a client-side JavaScript library that runs on your computer, and an extension for that library called forminput. More details can be found at the <a href="mathjax.org">MathJax website</a> and the <a href="https://github.com/mathjax/MathJax-third-party-extensions/tree/master/legacy/forminput">forminput repository page</a>. Please note that Mathemacure is not responsible for the practices, actions or content of links that lead to external websites. Mathemacure is not affiliated with MathJax, forminput, and GitHub in any way; we just use their services for our website.
 Therefore, no data inputted into our website should be kept indefinetly. Cookies, however, follow a different set of rules.
 <br/>
 However, the user is responsible for any input or action that disrupts the Mathemacure system or compromises the security of Mathemacure or any users using Mathemacure and is responsible for providing relevant and usable input into our services. Additionally, due to the lack of collection of personal data in the Mathemacure website, you are not able to change your information.
