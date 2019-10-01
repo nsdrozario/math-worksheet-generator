@@ -20,9 +20,10 @@
       <div class='jumbotron text-center' id='standout'>
         <h2 id='smaller'>Mathemacure</h2><br/>
         <h4>A simple solution for math training</h4><br/>
-        <h5><a href='worksheet.php' id='start'>Get Started</a></h5>
+        <h5><a href='worksheet.php' class="btn-mathemacure" id='start'>Get Started</a></h5>
       </div>
     </div>
+
     <div id='features'>
       <br/>
         <div class="jumbotron text-center" id="what">
