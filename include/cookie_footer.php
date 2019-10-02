@@ -6,7 +6,7 @@
             <p>In order to improve your experience using Mathemacure, we store cookies on your computer.
                 <br/>
                 By continuing to use our website you agree to us storing these cookies on your computer.
-                <a href="privacypolicy.php">Learn More</a>
+                <a href="privacypolicy.php" style="padding: 5px; background-color: rgba(0,0,0,0); color: #0059b3; border: 2px solid #0059b3; border-radius: 3px;">Learn More</a>
             </p>
           
       </div>
