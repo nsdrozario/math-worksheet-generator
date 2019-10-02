@@ -5,6 +5,11 @@
   background-color: white;
   border: none;
 }
+.ghost-btn-mathemacure {
+  padding: 5px; background-color: rgba(0,0,0,0); color: #0059b3; border: 2px solid #0059b3; border-radius: 3px;}
+.ghost-btn-mathemacure:hover {
+padding: 5px; background-color: #0059b3; color: white; border: 2px solid #0059b3; border-radius: 3px;
+}
 .bold {
     font-weight: bold;
 }
