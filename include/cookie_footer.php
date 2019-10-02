@@ -7,7 +7,7 @@
                 <br/>
                 By continuing to use our website you agree to us storing these cookies on your computer.
             </p>
-                          <a href="privacypolicy.php" class="ghost-btn-mathemacure">Learn More</a>
+                          <a href="privacypolicy.php" class="ghost-btn-mathemacure" id="learn-more-cookie">Learn More</a>
       </div>
       <script>
           var cookie_footer = document.getElementById("cookie-footer");
