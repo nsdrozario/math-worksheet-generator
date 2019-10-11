@@ -9,15 +9,20 @@
   right: 5px;
 }
 .ghost-btn-mathemacure {
-  padding: 5px; background-color: rgba(0,0,0,0); color: #0059b3; border: 2px solid #0059b3; border-radius: 3px;}
+  padding: 5px; background-color: rgba(0,0,0,0); color:  #1171ff; border: 2px solid #1171ff; border-radius: 3px;}
 .ghost-btn-mathemacure:hover {
-padding: 5px; background-color: #0059b3; color: white; border: 2px solid #0059b3; border-radius: 3px;
+padding: 5px; background-color:  #1171ff; color: white; border: 2px solid  #1171ff; border-radius: 3px; text-decoration: none;
 }
 .bold {
     font-weight: bold;
 }
+/*
+    
+    dark color : #0059b3
+  light color : #1171ff
+    */
 .btn-mathemacure {
-    background-color: #0059b3;
+    background-color: #1171ff;
     border: 1px solid rgba(0,0,0,0);
     border-radius: 5px;
     color: white;
@@ -25,10 +30,20 @@ padding: 5px; background-color: #0059b3; color: white; border: 2px solid #0059b3
     transition: background-color 200ms;
 }
 
-.btn-mathemacure[id!=add_card]:hover {
+.btn-mathemacure:hover {
     background-color: #3399ff;
     color: white;
 }
+.btn-mathemacure[id=add_card][disabled]:hover {
+    background-color: white;
+  border: 2px solid black;
+  color: gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+
 #cookie-footer {
     position: fixed;
     bottom: 5px;

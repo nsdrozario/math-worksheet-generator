@@ -27,6 +27,10 @@ $answer = array(
     } else {
         return $ans;
     }
+},
+"quadratic-factoring"=>function(){
+     $args = func_get_arg(0);
+     return quadratic_formula($args[0],$args[1],$args[2]);
 }
 );
 

@@ -10,6 +10,7 @@
             include 'include/navbar.php'
         ?>
         <div class='jumbotron text-center'><h2>Attributions</h2><br/></div>
+        <p>Text file version: <a class="allow" href="NOTICE.txt">NOTICE.txt</a></p>
         <br/>
 
                <pre class="license">
