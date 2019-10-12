@@ -20,28 +20,47 @@ function gcd ($a,$b) {
 }
 
 class complex {
-    $r = 0;
-    $i = 0;
-
+    public $r = 0;
+    public  $i = 0;
     function __construct($a, $b) {
         $r = $a;
         $i = $b;
         parent::__construct();
     }
-
     function render() {
         $sign = "";
+        $c = "";
         if ($i < 0) {
             $sign = "-";
         } else {
             $sign = "+";
         }
-        return "$r" . $sign . $i . "i";
+        if ($i==0) {
+            // do nothing
+        } else {
+            $c = $sign . $i . "i";
+        }
+        return $r . $c;
     }
 
 }
 
 
+
+function add($a, $b) { // supports both complex and real addition
+    if (get_class($a) == "complex" && get_class($b) == "complex") {
+        $c = new complex(0,0);
+        $c->r = ($a->r) + ($b->r);
+        $c->i = ($a->i) + ($b->i);
+        return $c;
+    } else if (get_class($a) == "complex" && get_class($b) == FALSE) {
+        
+    } else if (get_class($a) == FALSE && get_class($b) == "complex") {
+        
+    } else {
+        
+    }
+} 
 
 
 
@@ -50,7 +69,7 @@ function quadratic_formula($a_0,$b_0,$c_0) {
     $a=intval($a_0);
     $b=intval($b_0);
     $c=intval($c_0);
-    if ((sqrt(pow($b,2) - (4*$a*$c))/(2*$a)) < 0){
+    if ((pow($b,2) - (4*$a*$c)/(2*$a)) < 0){
         return "No real number solution";
     } else {
             $ans_1 = ((-1*$b) + sqrt(pow($b,2) - (4*$a*$c)))/(2*$a);
