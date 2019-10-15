@@ -29,17 +29,17 @@ class complex {
     function render() {
         $sign = "";
         $c = "";
-        if ($i < 0) {
+        if ($this->$i < 0) {
             $sign = "-";
         } else {
             $sign = "+";
         }
-        if ($i==0) {
+        if ($this->$i==0) {
             // do nothing
         } else {
             $c = $sign . $i . "i";
         }
-        return $r . $c;
+        return $this->$r . $c;
     }
 
 }
@@ -85,11 +85,11 @@ function quadratic_formula($a_0,$b_0,$c_0) {
         $complex->i = -1 * $complex->i;
         $cmp_str_2 = $complex->render();
         $ans_1 = "x=\frac{$cmp_sr}{$dn}, \frac{$cmp_sr_2}{$dn}";
-      //  return "No real number solution";
-        return $ans_1;
-    } else {
+        return "No real number solution";
+     return $ans_1;
+   } else {
             $ans_1 = ((-1*$b) + sqrt(pow($b,2) - (4*$a*$c)))/(2*$a);
-            $ans_2 =  ((-1*$b) - sqrt(pow($b,2) - (4*$a*$c)))/(2*$a);
+           $ans_2 =  ((-1*$b) - sqrt(pow($b,2) - (4*$a*$c)))/(2*$a);
             return "x=$ans_1, x=$ans_2";
     }
 
