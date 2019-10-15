@@ -77,7 +77,7 @@ function quadratic_formula($a_0,$b_0,$c_0) {
     $b=intval($b_0);
     $c=intval($c_0);
     $d = ((pow($b,2) - (4*$a*$c))/(2*$a));
-    if ($d < 0){
+   // if ($d < 0){
         $complex = i_sqrt($d);
         $complex->r = -1 * $b;
         $dn = 2*$a;
@@ -86,12 +86,12 @@ function quadratic_formula($a_0,$b_0,$c_0) {
         $cmp_str_2 = $complex->render();
         $ans_1 = "x=\frac{$cmp_sr}{$dn}, \frac{$cmp_sr_2}{$dn}";
       //  return "No real number solution";
-        return $ans_1;
-    } else {
-            $ans_1 = ((-1*$b) + sqrt(pow($b,2) - (4*$a*$c)))/(2*$a);
-            $ans_2 =  ((-1*$b) - sqrt(pow($b,2) - (4*$a*$c)))/(2*$a);
-            return "x=$ans_1, x=$ans_2";
-    }
+     return $ans_1;
+ //   } else {
+   //         $ans_1 = ((-1*$b) + sqrt(pow($b,2) - (4*$a*$c)))/(2*$a);
+     //       $ans_2 =  ((-1*$b) - sqrt(pow($b,2) - (4*$a*$c)))/(2*$a);
+       //     return "x=$ans_1, x=$ans_2";
+    //}
 
 }
 
