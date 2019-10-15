@@ -134,7 +134,12 @@
                  </div><br/>
 
                       <p><button id="randomize-inputs" class="btn-mathemacure" onclick="randomize($('#upper_bound').val(), $('#lower_bound').val())">Randomize inputs</button></p><br/>
-                          <p><button id="add_card" class="btn-mathemacure" onclick="addCard()" disabled>Add problem</button></p><br/>
+                          <p>
+                              <label for="quantity-problems">Amount of problems to add:</label>
+                              <input id="quantity-problems" name="quantity-problems" type="number"></input>
+
+                              <button id="add_card" class="btn-mathemacure" onclick="for(var i=0; i<parseInt(document.getElementById('quantity-problems').value); i++) {addCard();}" disabled>Add problems</button></p>
+                             <br/>
 </div>
 
         <div id="problem_cards" class='text-center'>

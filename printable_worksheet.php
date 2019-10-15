@@ -92,7 +92,7 @@
     </div>
 
         </div>
-    <footer style="text-align: center;">© 2019 Mathemacure</footer>
+    <footer style="text-align: center;">© 2019 Nathaniel D'Rozario and Nishchal Shukla</footer>
     </div>
 
     <div id="menu">
