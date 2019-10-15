@@ -1,7 +1,7 @@
 <br/><br/><br/><br/><br/>
 <footer class='text-center' id='footer'>
     <p class="bold" style="color: red;">
-    As of October 2, 2019, 9:53 PM Pacific Daylight Time, the Privacy Policy has been changed. 
+    As of October 15, 2019, 2:45 PM Pacific Daylight Time, the Privacy Policy has been changed. 
     <br/>
     Continued use of Mathemacure and its services after the stated effective date in the Privacy Policy constitutes as agreement of the renewed Privacy Policy. Please
     <br/>
