@@ -82,8 +82,11 @@ function quadratic_formula($a_0,$b_0,$c_0) {
         $complex->r = -1 * $b;
         $dn = 2*$a;
         $cmp_str = $complex->render();
-        $ans_1 = "x=\frac{$dn + $cmp_sr}{$dn}, \frac{$dn - $cmp_sr}{$dn}";
+        $complex->i = -1 * $complex->i;
+        $cmp_str_2 = $complex->render();
+        $ans_1 = "x=\frac{$cmp_sr}{$dn}, \frac{$cmp_sr_2}{$dn}";
       //  return "No real number solution";
+        return $ans_1;
     } else {
             $ans_1 = ((-1*$b) + sqrt(pow($b,2) - (4*$a*$c)))/(2*$a);
             $ans_2 =  ((-1*$b) - sqrt(pow($b,2) - (4*$a*$c)))/(2*$a);
