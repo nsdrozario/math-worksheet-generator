@@ -18,7 +18,6 @@ function gcd ($a,$b) {
 
     return $a_1;
 }
-
 class complex {
     public $r = 0;
     public  $i = 0;
@@ -45,6 +44,14 @@ class complex {
 
 }
 
+function i_sqrt($c) {
+       if ($c < 0) {
+       $cmp = new complex(0,sqrt(abs($c)));
+       return $cmp;
+       } else {
+       return sqrt($c);
+       }
+}
 
 
 function add($a, $b) { // supports both complex and real addition
@@ -69,8 +76,14 @@ function quadratic_formula($a_0,$b_0,$c_0) {
     $a=intval($a_0);
     $b=intval($b_0);
     $c=intval($c_0);
-    if ((pow($b,2) - (4*$a*$c)/(2*$a)) < 0){
-        return "No real number solution";
+    $d = (pow($b,2) - (4*$a*$c)/(2*$a));
+    if ($d < 0){
+        $complex = i_sqrt($d);
+        $complex->r = -1 * $b;
+        $dn = 2*$a;
+        $cmp_str = $complex->render();
+        $ans_1 = "x=\frac{$dn + $cmp_sr}{$dn}, \frac{$dn - $cmp_sr}{$dn}";
+      //  return "No real number solution";
     } else {
             $ans_1 = ((-1*$b) + sqrt(pow($b,2) - (4*$a*$c)))/(2*$a);
             $ans_2 =  ((-1*$b) - sqrt(pow($b,2) - (4*$a*$c)))/(2*$a);
