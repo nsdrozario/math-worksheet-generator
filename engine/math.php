@@ -76,7 +76,7 @@ function quadratic_formula($a_0,$b_0,$c_0) {
     $a=intval($a_0);
     $b=intval($b_0);
     $c=intval($c_0);
-    $d = (pow($b,2) - (4*$a*$c)/(2*$a));
+    $d = ((pow($b,2) - (4*$a*$c))/(2*$a));
     if ($d < 0){
         $complex = i_sqrt($d);
         $complex->r = -1 * $b;
