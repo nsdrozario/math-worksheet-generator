@@ -22,24 +22,34 @@ class complex {
     public $r = 0;
     public  $i = 0;
     function __construct($a, $b) {
-        $r = $a;
-        $i = $b;
-        parent::__construct();
+        $this->r = $a;
+        $this->i = $b;
     }
     function render() {
         $sign = "";
         $c = "";
-        if ($this->$i < 0) {
+        $real = "";
+        if ($this->i < 0) {
             $sign = "-";
+            $this->i = abs($this->i);
         } else {
             $sign = "+";
         }
-        if ($this->$i==0) {
+        if ($this->i==0) {
             // do nothing
+        } else if ($this->i==1){
+            $c = $sign . "i";
         } else {
-            $c = $sign . $i . "i";
+            $c = $sign . $this->i . "i";
         }
-        return $this->$r . $c;
+
+        if ($this->r == 0) {
+            $real = "";
+        } else {
+            $real = $this->r;
+        }
+
+        return $real . $c;
     }
 
 }
@@ -76,16 +86,16 @@ function quadratic_formula($a_0,$b_0,$c_0) {
     $a=intval($a_0);
     $b=intval($b_0);
     $c=intval($c_0);
-    $d = ((pow($b,2) - (4*$a*$c))/(2*$a));
+    $d = (pow($b,2) - (4*$a*$c));
     if ($d < 0){
         $complex = i_sqrt($d);
-        $complex->r = -1 * $b;
-        $dn = 2*$a;
+        $complex->i = $complex->i / (2*$a);
+        $complex->r = (-1 * $b) / (2*$a);
         $cmp_str = $complex->render();
         $complex->i = -1 * $complex->i;
         $cmp_str_2 = $complex->render();
-        $ans_1 = "x=\frac{$cmp_sr}{$dn}, \frac{$cmp_sr_2}{$dn}";
-        return "No real number solution";
+        $ans_1 = "x = ".$cmp_str.", ".$cmp_str_2;
+        return $ans_1;
      return $ans_1;
    } else {
             $ans_1 = ((-1*$b) + sqrt(pow($b,2) - (4*$a*$c)))/(2*$a);
