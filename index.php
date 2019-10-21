@@ -52,20 +52,19 @@
                <div class="col-sm-6 text-center" id='left'>
                         <h2>Fast</h2><br/>
                         <p>Create worksheets within minutes</p>
-                </div><br/><br/>
+                </div>
                  <div class='col-sm-6 text-center' id='right'>
                      <h2>Diverse</h2><br/>
                      <p>Put multiple kinds of problems from the same subject in one worksheet.</p>
                 </div>
         </div>
+        <?php
+            include 'include/footer.php';
+             ?>
         </div>
       <?php
       include 'include/cookie_footer.php';
 
 ?>
-  <br/><br/><br/><br/><br/><br/><br/><br/>
-  <?php
-      include 'include/footer.php';
-       ?>
     </body>
 </html>
