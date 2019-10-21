@@ -22,9 +22,6 @@
         <h4>A simple solution for math training</h4><br/>
         <h5><a href='worksheet.php' class="btn-mathemacure" id='start'>Get Started</a></h5>
       </div>
-      <span id='buttoner'data-toggle="modal" data-target="#myModal">
-  Opener
-</span>
     </div>
 
     <div id='features'>
