@@ -17,7 +17,7 @@ padding: 5px; background-color:  #1171ff; color: white; border: 2px solid  #1171
     font-weight: bold;
 }
 /*
-    
+
     dark color : #0059b3
   light color : #1171ff
     */
@@ -28,6 +28,10 @@ padding: 5px; background-color:  #1171ff; color: white; border: 2px solid  #1171
     color: white;
     padding: 10px;
     transition: background-color 200ms;
+}
+
+#pointer-hover:hover {
+  cursor: pointer;
 }
 
 .btn-mathemacure:hover {
@@ -44,7 +48,7 @@ padding: 5px; background-color:  #1171ff; color: white; border: 2px solid  #1171
 
 
 
-#cookie-footer {
+/*#cookie-footer {
     position: fixed;
     bottom: 5px;
     background-color: rgba(0, 0, 0, 0.81);
@@ -58,7 +62,7 @@ padding: 5px; background-color:  #1171ff; color: white; border: 2px solid  #1171
     border-style: solid;
     border-color: rgba(8, 5, 22, 0.86);
     left: 5px;
-}
+}*/
 #close-cookie-footer {
     position: absolute;
     top: 0;
@@ -208,4 +212,13 @@ input[type=submit] {
   padding: 10px;
   margin: 10px;
   background-color: #e3e3e3;
+}
+
+#buttoner {
+  color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  width: 0;
 }

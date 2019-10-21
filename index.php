@@ -6,7 +6,7 @@
     ?>
     <script type='text/javascript'>
       $(document).ready(function() {
-        $('#navhome').css('color', 'black');
+        $('#navhome').css('color', 'white');
           $('#navhome').css('cursor', 'default');
         $('#navsheet').css('color', '');
       });
@@ -22,6 +22,9 @@
         <h4>A simple solution for math training</h4><br/>
         <h5><a href='worksheet.php' class="btn-mathemacure" id='start'>Get Started</a></h5>
       </div>
+      <span id='buttoner'data-toggle="modal" data-target="#myModal">
+  Opener
+</span>
     </div>
 
     <div id='features'>
@@ -56,10 +59,9 @@
                 </div>
         </div>
         </div>
-      </div>
       <?php
       include 'include/cookie_footer.php';
-  
+
 ?>
   <br/><br/><br/><br/><br/><br/><br/><br/>
   <?php
