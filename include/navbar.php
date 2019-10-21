@@ -6,13 +6,13 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="index.php">Home</a>
+        <a class="nav-link" id='navhome' href="index.php">Home</a>
       </li>
       <!--<li class="nav-item">
         <a class="nav-link" href="support.php">Support</a>
       </li>-->
       <li class="nav-item">
-        <a class="nav-link" href="worksheet.php">Worksheets</a>
+        <a class="nav-link" id='navsheet' href="worksheet.php">Worksheets</a>
       </li>
     </ul>
   </div>

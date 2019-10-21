@@ -10,7 +10,7 @@
         <script>
             window.onload = function() {
               document.getElementById('navhome').style.color = '';
-              document.getElementById('navsheet').style.color = 'black';
+              document.getElementById('navsheet').style.color = 'white';
               document.getElementById('navsheet').style.cursor = 'default';
             }
             var problem_count = 0;
