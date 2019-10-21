@@ -9,6 +9,9 @@
               I agree to the Privacy Policy
           </span>
       </div>-->
+      <span id='buttoner'data-toggle="modal" data-target="#myModal">
+  Opener
+</span>
 <div class="modal fade" id="myModal">
   <div class="modal-dialog">
     <div class="modal-content">
