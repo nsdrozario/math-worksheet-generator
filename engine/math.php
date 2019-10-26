@@ -105,4 +105,29 @@ function quadratic_formula($a_0,$b_0,$c_0) {
 
 }
 
+function parametric_1($x1,$y1,$x2,$y2,$t) {
+   $sign_x = "";
+   $sign_y = "";
+   
+    if ((intval($x2)-intval($x1)) < 0) {
+        $sign_x = "-";
+    } else {
+        $sign_x = "+";
+    }
+    
+    if ((intval($y2)-intval($y1)) < 0) {
+        $sign_y = "-";
+    } else {
+        $sign_y = "+";
+    }
+    
+    $dtx = abs(intval($x2-$x1) / intval($t));
+    $dty = abs(intval($y2-$y1) / intval($t));
+    
+    $x_p = $x1 . $sign_x . $dtx;
+    $y_p = $y1 . $sign_y . $dty;
+    
+    return "(" . $x_p . "," . $y_p . ")";
+}
+
 ?>
