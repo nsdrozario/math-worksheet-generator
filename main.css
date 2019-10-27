@@ -5,6 +5,11 @@
   background-color: white;
   border: none;
 }
+
+h1,h2,h3,h4 {
+    color: #1171ff;
+}
+
 #learn-more-cookie {
   right: 5px;
 }

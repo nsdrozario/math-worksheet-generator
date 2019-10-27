@@ -14,8 +14,8 @@ $subject_problem = array(
     "linear-solve-x"=>"\(\FormInput[2][math-input]{" . $id . "_p[]" . "}x + " . "\FormInput[2][math-input]{" . $id . "_p[]" . "} = \FormInput[2][math-input]{" . $id . "_p[]" . "}\)",
     "quadratic-factoring"=>"\(\FormInput[2][math-input]{" . $id . "_p[]" . "}x^2 + " . "\FormInput[2][math-input]{" . $id . "_p[]" . "}x + " . "\FormInput[2][math-input]{" . $id . "_p[]" . "} = 0\)"
     ),
-    "pre-calc"=>array(
-    "parametric-1"=>"\( _{t=0} ( \FormInput[2][math-input]{" . $id . "_p[]" . "}, \FormInput[2][math-input]{" . $id . "_p[]" . "})" 
+    "precalc"=>array(
+    "parametric-1"=>"\( _{t=0} ( \FormInput[2][math-input]{" . $id . "_p[]" . "}, \FormInput[2][math-input]{" . $id . "_p[]" . "})\)<br/>\( _{t=\FormInput[2][math-input]{" . $id . "_p[]}} ( \FormInput[2][math-input]{" . $id . "_p[]" . "}, \FormInput[2][math-input]{" . $id . "_p[]" . "})\)" 
     )
 );
 
