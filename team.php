@@ -27,10 +27,11 @@
         <p>Lead Web Developer</p>
         <h2>Jennifer Chan</h2>
         <p>Designer</p>
-        </div>
         <h2>Sutantu Balamurugan</h2>
         <p>Software Engineer</p>
         
+        </div>
+    
 
         <?php
             include 'include/footer.php';
