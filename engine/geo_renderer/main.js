@@ -11,12 +11,6 @@ var _settings = {
 }; // global settings for geometry renderer environment
 
 
-function init() {
-
-// initialize environment
-
-}
-
 // oop
 
 class Point {
@@ -30,9 +24,9 @@ class Point {
 // entry point
 
 
-init();
 
-while (_settings["on"]) {
+
+function draw_f() {
     
     if (_settings['graph']) {
         var x_step = _settings['graph-settings']['x-step'];
@@ -47,5 +41,13 @@ while (_settings["on"]) {
                 }
             }
     } // draws graph lines
-
+    
+    window.requestAnimationFrame(draw_f)
+    
 }
+
+function init() {
+     draw_f();
+}
+
+init();
