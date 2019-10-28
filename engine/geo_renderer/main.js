@@ -1,4 +1,6 @@
 var canvas = document.getElementsByClassName("geo-renderer");
+var c = canvas.getContext("2d");
+
 var _mem = []; // memory for geometry renderer
 
 var _settings = {
@@ -34,11 +36,15 @@ function draw_f() {
         var x_max = Math.floor(canvas.width / x_step);
         var y_max = Math.floor(canvas.width / y_step);
             
-            for (var x=0; x<x_max; x += x_step) {
-                // draw vertical line
-                for (var y=0; y<y_max; y += y_max) {
-                // draw horizontal line
-                }
+            for (var x=1; x<x_max; x++) {
+                c.moveTo(x + x_step*(x-1), 0);
+                c.lineTo(x + x_step*(x-1), canvas.height);
+                //move vertical
+            }
+            for (var y=1; y<y_max; y += y_max) {
+                c.moveTo(0, y + y_step*(y-1));
+                c.lineTo(canvas.width, y + y_step*(y-1));
+                //move horizontal 
             }
     } // draws graph lines
     
