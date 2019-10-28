@@ -47,7 +47,7 @@ function draw_f() {
 }
 
 function init() {
-     draw_f();
+     window.requestAnimationFrame(draw_f());
 }
 
 init();
