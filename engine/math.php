@@ -130,4 +130,11 @@ function parametric_1($x1,$y1,$x2,$y2,$t) {
     return "(" . $x_p . "," . $y_p . ")";
 }
 
+function pythag_theorem($a,$b)
+{
+    $ab = pow($a,2) + pow($b,2);
+    return sqrt($ab);
+
+}
+
 ?>
