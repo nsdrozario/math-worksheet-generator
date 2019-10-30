@@ -137,4 +137,11 @@ function pythag_theorem($a,$b)
 
 }
 
+function standard_to_vertex($a,$b,$c)
+{
+    $h = (0 - $b)/(2 * $a);
+    $k = (pow($h,2) * $a) + ($b * $h) + $c;
+    return "y = " . $a . "(x - " . $h . ")^2 + " . $k;        //Exponent could be superscrippted to look better 
+}
+
 ?>
