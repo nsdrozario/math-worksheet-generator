@@ -6,8 +6,16 @@
   border: none;
 }
 
-h1,h2,h3,h4 {
-    color: #1171ff;
+#header-jumbotron {
+    background-color: rgba(255, 161, 30, 0.00);
+    color: white;
+}
+
+#standout{
+        background-color: #a5d58b;
+    color: white;
+      border: 5px solid gray;
+  border-radius: 2px;
 }
 
 #learn-more-cookie {
@@ -39,6 +47,19 @@ padding: 5px; background-color:  #1171ff; color: white; border: 2px solid  #1171
   cursor: pointer;
 }
 
+.ghost-btn {
+    color: white;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid white;
+    padding: 10px;
+    transition: background-color 200ms, color 200ms;
+    
+}
+.ghost-btn:hover {
+    color: black;
+    background-color: white;
+}
 .btn-mathemacure:hover {
     background-color: #3399ff;
     color: white;
@@ -121,11 +142,6 @@ background-attachment: fixed;
 }
 .jumbotron{
     background-color: rgba(0,0,0,0);
-}
-#standout{
-  background-color: white;
-  border: 5px solid gray;
-  border-radius: 2px;
 }
 .col-md-4 {
   padding-bottom: 50px;

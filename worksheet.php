@@ -105,10 +105,8 @@
         <?php
             include 'include/navbar.php';
         ?>
-        <br/>
-        <br/>
-        <br/>
-       <div class='jumbotron text-center'><h1>Worksheet Creator</h1></div>
+
+       <div class='jumbotron text-center' id="header-jumbotron" style="background-color: #ff9c00; color: white; padding: 8%;"><h1 style="color: white;">Worksheet Creator</h1></div>
 
          <div id="menus">
 
