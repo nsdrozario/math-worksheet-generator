@@ -1,4 +1,7 @@
 <?php
+
+define("EPILSON", 0.00000001);    
+
 include 'dynamic_problem_answer.php';
 function gcd ($a,$b) {
     $tmp = 0;
@@ -130,18 +133,32 @@ function parametric_1($x1,$y1,$x2,$y2,$t) {
     return "(" . $x_p . "," . $y_p . ")";
 }
 
+function poly_to_func($str) { // fix this
+    $coefficients = array();
+    $degrees = array();
+    $c = preg_match_all("([-]?\d)x\^\d", $str, $coefficients);
+    $d = preg_match_all("[-]?\dx\^(\d)", $str, $degrees);
+    return function($x) use ($coefficients, $degrees) {
+        $c_9 = $coefficients;
+        $d_0 = $degrees;
+        $sum = 0;
+        for ($i=0; $i<count($c_0); $i++) {
+            $sum += pow(intval($x), intval($degrees[$i])) * intval($d);
+        }
+    };
+}
+
+function derivative($f,$x) {
+    return ($f($x+EPILSON) - $f($x) / EPILSON);
+}
+
+//var_dump(poly_to_func("1x^2"));
+
 function pythag_theorem($a,$b)
 {
     $ab = pow($a,2) + pow($b,2);
     return sqrt($ab);
 
-}
-
-function standard_to_vertex($a,$b,$c)
-{
-    $h = (0 - $b)/(2 * $a);
-    $k = (pow($h,2) * $a) + ($b * $h) + $c;
-    return "y = " . $a . "(x - " . $h . ")^2 + " . $k;        //Exponent could be superscrippted to look better 
 }
 
 ?>
