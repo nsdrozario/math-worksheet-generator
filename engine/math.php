@@ -139,12 +139,13 @@ function poly_to_func($str) { // fix this
     $c = preg_match_all("([-]?\d)x\^\d", $str, $coefficients);
     $d = preg_match_all("[-]?\dx\^(\d)", $str, $degrees);
     return function($x) use ($coefficients, $degrees) {
-        $c_9 = $coefficients;
+        $c_0 = $coefficients;
         $d_0 = $degrees;
         $sum = 0;
         for ($i=0; $i<count($c_0); $i++) {
-            $sum += pow(intval($x), intval($degrees[$i])) * intval($d);
+            $sum += pow(intval($x), intval($d_0[$i])) * intval($c_0[$i]);
         }
+        return $sum;
     };
 }
 
