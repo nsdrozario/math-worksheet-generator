@@ -1,6 +1,6 @@
 <?php
 
-define("EPILSON", 0.00000001);    
+define("EPILSON", 0.0000001);    
 
 include 'dynamic_problem_answer.php';
 function gcd ($a,$b) {
@@ -136,24 +136,30 @@ function parametric_1($x1,$y1,$x2,$y2,$t) {
 function poly_to_func($str) { // fix this
     $coefficients = array();
     $degrees = array();
+   
+    $terms = explode("[+]", $str);
+
+    for ($i=0; $i < count($terms); $i++) {
+         $degrees[$i] = substr($terms[$i], -1);
+         $coefficients[$i] = substr($terms[$i], 0,1);
+    }
+
+   
+   /*
     $c = preg_match_all("([-]?\d)[x]\^\d", $str, $coefficients);
-    $d = preg_match_all("[-]?\d[x]\^(\d)", $str, $degrees);
+    $d = preg_match_all("[-]?\d[x]\^(\d)", $str, $degrees);*/
     return function($x) use ($coefficients, $degrees) {
-        $c_0 = $coefficients;
-        $d_0 = $degrees;
         $sum = 0;
-        for ($i=0; $i<count($c_0); $i++) {
-            $sum += pow(intval($x), intval($d_0[$i])) * intval($c_0[$i]);
+        for ($i=0; $i<count($degrees); $i++) {
+            $sum += pow(floatval($x), floatval($degrees[$i])) * floatval($coefficients[$i]);
         }
         return $sum;
     };
 }
 
 function derivative($f,$x) {
-    return ($f($x+EPILSON) - $f($x) / EPILSON);
+    return round(floatval($f($x+EPILSON) - $f($x)) / EPILSON, 3); 
 }
-
-derivative(poly_to_func("1x^2"), 2);
 
 function pythag_theorem($a,$b)
 {
