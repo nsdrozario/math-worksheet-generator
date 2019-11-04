@@ -136,8 +136,8 @@ function parametric_1($x1,$y1,$x2,$y2,$t) {
 function poly_to_func($str) { // fix this
     $coefficients = array();
     $degrees = array();
-    $c = preg_match_all("([-]?\d)x\^\d", $str, $coefficients);
-    $d = preg_match_all("[-]?\dx\^(\d)", $str, $degrees);
+    $c = preg_match_all("([-]?\d)[x]\^\d", $str, $coefficients);
+    $d = preg_match_all("[-]?\d[x]\^(\d)", $str, $degrees);
     return function($x) use ($coefficients, $degrees) {
         $c_0 = $coefficients;
         $d_0 = $degrees;
@@ -153,7 +153,7 @@ function derivative($f,$x) {
     return ($f($x+EPILSON) - $f($x) / EPILSON);
 }
 
-//var_dump(poly_to_func("1x^2"));
+derivative(poly_to_func("1x^2"), 2);
 
 function pythag_theorem($a,$b)
 {
