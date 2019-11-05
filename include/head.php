@@ -15,4 +15,12 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 <link href="main.css" rel="stylesheet"/>
 <link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="mathquill.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="mathquill.js"></script>
+<script>
+var MQ = MathQuill.getInterface(2);
+</script>
+
+<meta name="theme-color" content="#0000e6"/>
 <meta name="google-site-verification" content="P48RQ30mnW1cIWCkYfBihhCg0IrvJCcWImRcGKpsqC4" />
