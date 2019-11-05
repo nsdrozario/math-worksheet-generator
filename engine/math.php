@@ -1,4 +1,7 @@
 <?php
+
+define("EPILSON", 0.0000001);    
+
 include 'dynamic_problem_answer.php';
 function gcd ($a,$b) {
     $tmp = 0;
@@ -103,6 +106,73 @@ function quadratic_formula($a_0,$b_0,$c_0) {
             return "x=$ans_1, x=$ans_2";
     }
 
+}
+
+function parametric_1($x1,$y1,$x2,$y2,$t) {
+   $sign_x = "";
+   $sign_y = "";
+   
+    if ((intval($x2)-intval($x1)) < 0) {
+        $sign_x = "-";
+    } else {
+        $sign_x = "+";
+    }
+    
+    if ((intval($y2)-intval($y1)) < 0) {
+        $sign_y = "-";
+    } else {
+        $sign_y = "+";
+    }
+    
+    $dtx = abs(intval($x2-$x1) / intval($t));
+    $dty = abs(intval($y2-$y1) / intval($t));
+    
+    $x_p = $x1 . $sign_x . $dtx;
+    $y_p = $y1 . $sign_y . $dty;
+    
+    return "(" . $x_p . "," . $y_p . ")";
+}
+
+function poly_to_func($str) { // fix this
+    $coefficients = array();
+    $degrees = array();
+   
+    $terms = explode("[+]", $str);
+
+    for ($i=0; $i < count($terms); $i++) {
+         $degrees[$i] = substr($terms[$i], -1);
+         $coefficients[$i] = substr($terms[$i], 0,1);
+    }
+
+   
+   /*
+    $c = preg_match_all("([-]?\d)[x]\^\d", $str, $coefficients);
+    $d = preg_match_all("[-]?\d[x]\^(\d)", $str, $degrees);*/
+    return function($x) use ($coefficients, $degrees) {
+        $sum = 0;
+        for ($i=0; $i<count($degrees); $i++) {
+            $sum += pow(floatval($x), floatval($degrees[$i])) * floatval($coefficients[$i]);
+        }
+        return $sum;
+    };
+}
+
+function derivative($f,$x) {
+    return round(floatval($f($x+EPILSON) - $f($x)) / EPILSON, 3); 
+}
+
+function pythag_theorem($a,$b)
+{
+    $ab = pow($a,2) + pow($b,2);
+    return sqrt($ab);
+
+}
+
+function standard_to_vertex($a,$b,$c)
+{
+    $h = (0 - $b)/(2 * $a);
+    $k = (pow($h,2) * $a) + ($b * $h) + $c;
+    return "y = " . $a . "(x - " . $h . ")^2 + " . $k;        //Exponent could be superscrippted to look better 
 }
 
 ?>

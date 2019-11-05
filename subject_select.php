@@ -22,7 +22,14 @@ ob_start();
 
 <?php
     $subjects["arithm"] = ob_get_clean();
+    ob_start();
+    ?>
 
+<option value="none">---</option>
+<option value="parametric-1">Parametric Equations of Motion (easy)</option>
+
+<?php
+    $subjects['precalc'] = ob_get_clean();
     $subject = $_POST['subject'];
     echo $subjects[$subject];
 

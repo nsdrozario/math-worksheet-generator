@@ -7,7 +7,8 @@
     "mult" => " a \cdot a ",
     "divide" => " a / a ",
     "linear-solve-x" => "ax + a = a",
-    "quadratic-factoring"=>"ax^2+ax+a=0"
+    "quadratic-factoring"=>"ax^2+ax+a=0",
+    "parametric-1"=>"(a+at, a+at)"
     );
 
 

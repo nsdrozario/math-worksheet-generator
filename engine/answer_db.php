@@ -31,6 +31,10 @@ $answer = array(
 "quadratic-factoring"=>function(){
      $args = func_get_arg(0);
      return quadratic_formula($args[0],$args[1],$args[2]);
+},
+"parametric-1"=>function() {
+    $args = func_get_arg(0);
+    return parametric_1($args[0],$args[1],$args[3],$args[4],$args[2]);
 }
 );
 

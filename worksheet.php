@@ -105,30 +105,28 @@
         <?php
             include 'include/navbar.php';
         ?>
-        <br/>
-        <br/>
-        <br/>
-       <div class='jumbotron text-center'><h1>Worksheet Creator</h1></div>
+
+       <div class='jumbotron text-center' id="header-jumbotron" style="background-color: #ff9c00; color: white; padding: 8%;"><h1 style="color: white;">Worksheet Creator</h1></div>
 
          <div id="menus">
 
              <div class='text-center' id="menu-1">
-           <h2>Select a subject</h2><br/><p><select id="subject" class='text-center' onchange="update_subject()">
+           <h2 class="normal-color">Select a subject</h2><br/><p><select id="subject" class='text-center' onchange="update_subject()">
            <option value="none">---</option>
            <option value="arithm">Arithmetic</option>
            <option value="alg">Algebra</option>
-           <!-- <option value="precalc">Precalculus</option>
-           <option value="calc">Calculus</option> -->
+          <option value="precalc">Precalculus</option>
+           <!--  <option value="calc">Calculus</option> -->
         </select></p>
       </div>
     </div>
       <div class='container text-center'>
               <div class='row text-center'>
                 <div class='col-md-6'>
-            <p><label for="lower_bound"><h3>Random number lower bound</h3></label></p>
+            <p><label for="lower_bound"><h3 class="normal-color">Random number lower bound</h3></label></p>
             <p><input class='text-center' type="number" min="1" max="100" value="1" onchange="check()" id="lower_bound"/></div></p>
             <div class='col-md-6'>
-             <p><label for="upper_bound"><h3>Random number upper bound</h3></label></p>
+             <p><label for="upper_bound"><h3 class="normal-color">Random number upper bound</h3></label></p>
             <p><input class='text-center' type="number" min="1" max="100" value="10" onchange="check()" id="upper_bound"/></p>
                    </div>
                  </div><br/>

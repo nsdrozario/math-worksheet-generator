@@ -9,6 +9,8 @@
               I agree to the Privacy Policy
           </span>
       </div>-->
+<div id="modal-container">
+     
       <span id='buttoner'data-toggle="modal" data-target="#myModal">
   Opener
 </span>
@@ -40,16 +42,17 @@ I agree to the Privacy Policy
     </div>
   </div>
 </div>
+    </div>
       <script>
-          var cookie_footer = document.getElementById("buttoner");
+          var cookie_footer = document.getElementById("modal-container");
           var cookies = decodeURIComponent(document.cookie).split(";");
           function check_agreement() {
               for (var i = 0; i < cookies.length; i++) {
                   if (cookies[i].trim() == "read_cookie_agreement=true") {
-                    cookie_footer.style.display = 'none';
+                      cookie_footer.innerHTML = "";
                   } else {
-                      window.onload = function() {
-                        document.getElementById('buttoner').click();
+                      window.onload = function () {
+                          document.getElementById('buttoner').click();
                       }
                   }
               }
@@ -57,9 +60,9 @@ I agree to the Privacy Policy
           check_agreement();
           function close_footer() {
               var expiration_date = new Date();
-              expiration_date = expiration_date.setYear(expiration_date.getYear() + 365);
-              document.cookie = "read_cookie_agreement=true; expires=" + expiration_date;
+              expiration_date.setFullYear(expiration_date.getFullYear() + 1);
+              document.cookie = "read_cookie_agreement=true; expires=" + (expiration_date.toUTCString());
               cookies = decodeURIComponent(document.cookie).split(";");
               check_agreement();
-            }
+          }
       </script>
