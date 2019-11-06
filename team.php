@@ -29,6 +29,8 @@
         <p>Designer</p>
         <h2>Sutantu Balamurugan</h2>
         <p>Software Engineer</p>
+        <h2>Ryan Schlosser</h2>
+        <p>Software Engineer</p>
         
         </div>
     
