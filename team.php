@@ -6,6 +6,14 @@
         <?php
            include 'include/head.php';
         ?>
+        <script type='text/javascript'>
+          $(document).ready(function() {
+            $('#navteam').css('color', 'white');
+            $('#navteam').css('cursor', 'default');
+            $('#navsheet').css('color', '');
+            $('#navhome').css('color', '');
+          });
+        </script>
     </head>
     <body>
         <?php
@@ -31,9 +39,9 @@
         <p>Software Engineer</p>
         <h2>Ryan Schlosser</h2>
         <p>Software Engineer</p>
-        
+
         </div>
-    
+
 
         <?php
             include 'include/footer.php';

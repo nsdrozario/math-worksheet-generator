@@ -7,8 +7,9 @@
     <script type='text/javascript'>
       $(document).ready(function() {
         $('#navhome').css('color', 'white');
-          $('#navhome').css('cursor', 'default');
+        $('#navhome').css('cursor', 'default');
         $('#navsheet').css('color', '');
+        $('#navteam').css('color', '');
       });
     </script>
   </head>

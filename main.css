@@ -54,7 +54,7 @@ padding: 5px; background-color:  #1171ff; color: white; border: 2px solid  #1171
     border: 2px solid white;
     padding: 10px;
     transition: background-color 200ms, color 200ms;
-    
+
 }
 .ghost-btn:hover {
     color: black;
@@ -163,11 +163,6 @@ pre.license{
     border-radius: 5px;
     margin: 10px;
 }
-input[type=number] {
-  background-color: white;
-  color: black;
-  text-align: center;
-}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -175,7 +170,8 @@ input::-webkit-inner-spin-button {
 }
 
 input[type=number] {
-    -moz-appearance:textfield; /* Firefox */
+    -moz-appearance:textfield;
+    text-align: center;
 }
 .card {
     margin-bottom: 10px;
@@ -194,15 +190,7 @@ button:disabled {
   border: 2px solid black;
   border-radius: 5px;
   padding: 10px;
-}/*
-input[type=submit] {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 10px;
 }
-      */
 .close-card {
     position: absolute;
     top: 0px;
