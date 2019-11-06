@@ -12,6 +12,7 @@
               document.getElementById('navhome').style.color = '';
               document.getElementById('navsheet').style.color = 'white';
               document.getElementById('navsheet').style.cursor = 'default';
+              document.getElementById('navteam').style.color = '';
             }
             var problem_count = 0;
 
@@ -104,7 +105,7 @@
     <body>
         <?php
             include 'include/navbar.php';
-        ?>
+        ?><br/><br/>
 
        <div class='jumbotron text-center' id="header-jumbotron" style="background-color: #66c7ff; color: white; padding: 8%;"><h1 style="color: white;">Worksheet Creator</h1></div>
 
