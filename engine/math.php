@@ -92,7 +92,7 @@ function quadratic_formula($a_0,$b_0,$c_0) {
     $d = (pow($b,2) - (4*$a*$c));
     if ($d < 0){
         $complex = i_sqrt($d);
-        $complex->i = $complex->i / (2*$a);
+        $complex->i = round($complex->i / (2*$a), 3);
         $complex->r = (-1 * $b) / (2*$a);
         $cmp_str = $complex->render();
         $complex->i = -1 * $complex->i;
