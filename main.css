@@ -1,9 +1,9 @@
 * {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 #button {
-  background-color: white;
-  border: none;
+    background-color: white;
+    border: none;
 }
 
 #header-jumbotron {
@@ -12,19 +12,51 @@
 }
 
 #standout{
-        background-color: #66c7ff;
+    background-color: #66c7ff;
     color: white;
-      border: 5px solid gray;
-  border-radius: 2px;
+    border: 5px solid gray;
+    border-radius: 2px;
 }
 
 #learn-more-cookie {
-  right: 5px;
+    right: 5px;
 }
+
+.seattle-background {
+    background-image: url("seattle-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: #333333;
+    width: 70%;
+    min-width: 450px;
+    margin: 50px auto;
+    padding: 50px 0;
+}
+
+article {
+    width: 80%;
+    min-width: 350px;
+    margin: 0 auto;
+}
+
 .ghost-btn-mathemacure {
-  padding: 5px; background-color: rgba(0,0,0,0); color:  #1171ff; border: 2px solid #1171ff; border-radius: 3px;}
+    padding: 5px;
+    background-color: rgba(0,0,0,0);
+    color:  #1171ff;
+    border: 2px solid #1171ff;
+    border-radius: 3px;}
 .ghost-btn-mathemacure:hover {
-padding: 5px; background-color:  #1171ff; color: white; border: 2px solid  #1171ff; border-radius: 3px; text-decoration: none;
+    padding: 5px;
+    background-color:  #1171ff;
+    color: white;
+    border: 2px solid #1171ff;
+    border-radius: 3px;
+    text-decoration: none;
 }
 .bold {
     font-weight: bold;
@@ -44,7 +76,7 @@ padding: 5px; background-color:  #1171ff; color: white; border: 2px solid  #1171
 }
 
 #pointer-hover:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .ghost-btn {
@@ -66,13 +98,11 @@ padding: 5px; background-color:  #1171ff; color: white; border: 2px solid  #1171
 }
 .btn-mathemacure[id=add_card][disabled]:hover {
     background-color: white;
-  border: 2px solid black;
-  color: gray;
-  border-radius: 5px;
-  padding: 10px;
+    border: 2px solid black;
+    color: gray;
+    border-radius: 5px;
+    padding: 10px;
 }
-
-
 
 /*#cookie-footer {
     position: fixed;
@@ -114,45 +144,44 @@ padding: 5px; background-color:  #1171ff; color: white; border: 2px solid  #1171
     line-height: 35px;
 }
 #reverse {
-
-      -webkit-transform: scale(-1, 1);
-      -moz-transform: scale(-1, 1);
-      -ms-transform: scale(-1, 1);
-      -o-transform: scale(-1, 1);
-      transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
 }
 #home {
-  background-image: url('background.jpg');
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-  color: black;
-  height: 100vh;
-  padding: 0 20px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+    height: 100vh;
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #features {
-  background-color: white;
-  color: black;
-  height: 100vh;
+    background-color: white;
+    color: black;
+    height: 100vh;
 }
 .jumbotron{
     background-color: rgba(0,0,0,0);
 }
 .col-md-4 {
-  padding-bottom: 50px;
-  color: white;
+    padding-bottom: 50px;
+    color: white;
 }
 a {
-  color: black;
+    color: black;
 }
 @media (hover:hover) {
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 }
 
@@ -178,18 +207,18 @@ input[type=number] {
     width: 97%;
 }
 button {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 10px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
 }
 button:disabled {
-  background-color: white;
-  color: gray;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 10px;
+    background-color: white;
+    color: gray;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
 }
 .close-card {
     position: absolute;
@@ -204,34 +233,34 @@ button:disabled {
 }
 
 .close-card:hover{
-  background-color: red;
-  cursor: pointer;
+    background-color: red;
+    cursor: pointer;
 }
 .rotate {
-  writing-mode:vertical-rl;
+    writing-mode:vertical-rl;
 }
 .allow {
-  text-decoration: underline;
-  color: blue;
+    text-decoration: underline;
+    color: blue;
 }
 .footer-link {
-      padding-left: 20px;
+    padding-left: 20px;
 }
 #footer {
-  padding: 10px;
-  margin: 10px;
-  background-color: #e3e3e3;
+    padding: 10px;
+    margin: 10px;
+    background-color: #e3e3e3;
 }
 
 #buttoner {
-  color: transparent;
-  border: none;
-  margin: 0;
-  padding: 0;
-  height: 0;
-  width: 0;
+    color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
 }
 
 .col-sm-6 {
-  padding-bottom: 50px;
+    padding-bottom: 50px;
 }
