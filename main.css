@@ -30,14 +30,6 @@
     background-attachment: fixed;
 }
 
-.container {
-    background-color: #333333;
-    width: 70%;
-    min-width: 450px;
-    margin: 50px auto;
-    padding: 50px 0;
-}
-
 article {
     width: 80%;
     min-width: 350px;
@@ -247,9 +239,10 @@ button:disabled {
     padding-left: 20px;
 }
 #footer {
+    color: #FFFFFF;
     padding: 10px;
-    margin: 10px;
-    background-color: #e3e3e3;
+    margin: 0;
+    background-color: #333333;
 }
 
 #buttoner {

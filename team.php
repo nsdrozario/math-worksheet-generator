@@ -21,7 +21,7 @@
            include 'include/navbar.php';
         ?>
 
-        <div class="container">
+        <div class="container" style="background-color: #333333; margin-top: 50px;">
             <article>
                 <div class="jumbotron text-center" style="color: #FFFFFF;">
                     <h1>Our Team</h1>
