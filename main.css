@@ -244,9 +244,10 @@ button:disabled {
     padding-left: 20px;
 }
 #footer {
+    color: #FFFFFF;
     padding: 10px;
-    margin: 10px;
-    background-color: #e3e3e3;
+    margin: 0;
+    background-color: #333333;
 }
 
 #buttoner {
