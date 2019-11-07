@@ -92,8 +92,8 @@ function quadratic_formula($a_0,$b_0,$c_0) {
     $d = (pow($b,2) - (4*$a*$c));
     if ($d < 0){
         $complex = i_sqrt($d);
-        $complex->i = round($complex->i / (2*$a), 3);
-        $complex->r = (-1 * $b) / (2*$a);
+        $complex->i = round($complex->i / (2*$a), 4);
+        $complex->r = round((-1 * $b) / (2*$a), 4);
         $cmp_str = $complex->render();
         $complex->i = -1 * $complex->i;
         $cmp_str_2 = $complex->render();
@@ -101,8 +101,8 @@ function quadratic_formula($a_0,$b_0,$c_0) {
         return $ans_1;
      return $ans_1;
    } else {
-            $ans_1 = ((-1*$b) + sqrt(pow($b,2) - (4*$a*$c)))/(2*$a);
-           $ans_2 =  ((-1*$b) - sqrt(pow($b,2) - (4*$a*$c)))/(2*$a);
+            $ans_1 = round(((-1*$b) + sqrt(pow($b,2) - (4*$a*$c)))/(2*$a),4);
+           $ans_2 =  round(((-1*$b) - sqrt(pow($b,2) - (4*$a*$c)))/(2*$a),4);
             return "x=$ans_1, x=$ans_2";
     }
 
