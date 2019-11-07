@@ -7,7 +7,8 @@ $subject_problem = array(
     array(
         "add"=>"\(\FormInput[2][math-input]{" . $id . "_p[]" . "} + \FormInput[2][math-input]{" . $id . "_p[]" . "} \)",
         "sub"=>"\(\FormInput[2][math-input]{" . $id . "_p[]" . "} - \FormInput[2][math-input]{" . $id . "_p[]" . "} \) ",
-        "mult"=>"\(\FormInput[2][math-input]{" . $id . "_p[]" . "}  \cdot  \FormInput[2][math-input]{" . $id . "_p[]" . "} \) "
+        "mult"=>"\(\FormInput[2][math-input]{" . $id . "_p[]" . "}  \cdot  \FormInput[2][math-input]{" . $id . "_p[]" . "} \) ",
+        "divide"=>"\(\FormInput[2][math-input]{" . $id . "_p[]" . "}  \div  \FormInput[2][math-input]{" . $id . "_p[]" . "} \) "
         ),
 "alg"=>
     array(
