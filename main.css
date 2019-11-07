@@ -30,11 +30,6 @@
     background-attachment: fixed;
 }
 
-.container {
-    background-color: #333333;
-    margin-top: 50px;
-}
-
 article {
     width: 80%;
     min-width: 350px;
