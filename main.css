@@ -128,6 +128,20 @@
     -o-transform: scale(-1, 1);
     transform: scale(-1, 1);
 }
+#discord {
+   background-image: url('discord-background.png');
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   color: black;
+   height: 100vh;
+   padding: 0 20px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
 #team {
    background-image: url('seattle-background.jpg');
    background-size: cover;
