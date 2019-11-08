@@ -10,8 +10,6 @@
          $(document).ready(function() {
             $('#navteam').css('color', 'white');
             $('#navteam').css('cursor', 'default');
-            $('#navsheet').css('color', '');
-            $('#navhome').css('color', '');
          });
       </script>
    </head>
