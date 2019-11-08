@@ -17,7 +17,7 @@ $answer = array(
 "divide"=>function(){
     $args = func_get_arg(0);
     return round($args[0] / $args[1], 4);
-}
+},
 "linear-solve-x"=>function() {
     $args = func_get_arg(0);
     $ans = ($args[2] - $args[1])/$args[0];
