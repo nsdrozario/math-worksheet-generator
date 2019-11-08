@@ -26,7 +26,7 @@
          </div>
       </div>
 
-      <div id='features'>
+      <div style='background-color: white'>
          <br/>
          <div class="jumbotron text-center">
             <h2>What is our Discord?</h2>

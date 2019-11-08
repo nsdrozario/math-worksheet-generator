@@ -136,6 +136,7 @@
                               <input id="quantity-problems" name="quantity-problems" type="number" style='margin-bottom: 15px;'></input>
 
                               <button id="add_card" class="btn-mathemacure" onclick="for(var i=0; i<parseInt(document.getElementById('quantity-problems').value); i++) {addCard();}" disabled>Add problems</button></p>
+                              <p><button id='clearAll' class="btn-mathemacure" onclick='document.getElementById("problems").innerHTML = "";'>Clear All Problems</button></p>
                              <br/>
 </div>
 
