@@ -36,11 +36,11 @@
             <p>Our discord server sounds like it would just be about math information and help, but that is not all that we offer. It is a friendly environment where people are kind to each other and a place to hang out. Its main purpose is to offer people a place to discuss about math or other academic subjects but you can use it to play some games with people or just socialize and talk about life. If you want to join our server. Just click the link below.</p>
             <br/>
             <br/>
-            <a href="https://discord.gg/nDd7JCm">Discord Join Link</a>
+            <a target='_blank' class='ghost-btn-mathemacure' href="https://discord.gg/nDd7JCm">Discord Join Link</a>
          </div>
-         <?php
-            include 'include/footer.php';
-         ?>
       </div>
+      <?php
+         include 'include/footer.php';
+      ?>
    </body>
 </html>
