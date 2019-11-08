@@ -2,14 +2,14 @@
 <html lang="en">
    <head>
       <meta charset="utf-8" />
-      <title>Mathemacure | Discord</title>
+      <title>Mathemacure | Social Media</title>
       <?php
          include 'include/head.php';
       ?>
       <script type='text/javascript'>
          $(document).ready(function() {
-            $('#navdiscord').css('color', 'white');
-            $('#navdiscord').css('cursor', 'default');
+            $('#navdsocial').css('color', 'white');
+            $('#navsocial').css('cursor', 'default');
          });
       </script>
    </head>
@@ -29,7 +29,7 @@
       <div style='background-color: white'>
          <br/>
          <div class="jumbotron text-center">
-            <h3>What is our Discord?</h3>
+            <h3>Our Discord</h3>
             <p>Our discord server sounds like it would just be about math information and help, but that is not all that we offer. It is a friendly environment where people are kind to each other and a place to hang out. Its main purpose is to offer people a place to discuss about math or other academic subjects but you can use it to play some games with people or just socialize and talk about life. If you want to join our server. Just click the link below.</p>
             <br/>
             <br/>
