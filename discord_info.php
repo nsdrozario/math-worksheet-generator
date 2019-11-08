@@ -21,7 +21,7 @@
 
       <div id='discord'>
          <div class='jumbotron text-center' id='standout'>
-            <h1 id='smaller'>Our Social Media</h1><br/>
+            <h1>id='smaller'>Our Social Media</h1><br/>
             <h2>Get help and information anywhere and anytime.</h2><br/>
          </div>
       </div>
