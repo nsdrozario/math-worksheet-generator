@@ -8,7 +8,7 @@
       ?>
       <script type='text/javascript'>
          $(document).ready(function() {
-            $('#navdsocial').css('color', 'white');
+            $('#navsocial').css('color', 'white');
             $('#navsocial').css('cursor', 'default');
          });
       </script>

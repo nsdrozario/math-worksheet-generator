@@ -139,7 +139,7 @@
             <button id="add_card" class="btn-mathemacure" onclick="for(var i=0; i<parseInt(document.getElementById('quantity-problems').value); i++) {addCard();}" disabled>Add problems</button>
          </p>
          <p>
-            <button id='clearAll' class="btn-mathemacure" onclick='document.getElementById("problems").innerHTML = "";'>Clear All Problems</button>
+            <button id='clearAll' class="btn-mathemacure" onclick='document.getElementById("problems").innerHTML = ""; document.getElementById("problem_c").value = "0"; problem_count = 0;'>Clear All Problems</button>
          </p><br/>
       </div>
 
