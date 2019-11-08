@@ -22,20 +22,6 @@
     right: 5px;
 }
 
-.seattle-background {
-    background-image: url("seattle-background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-article {
-    width: 80%;
-    min-width: 350px;
-    margin: 0 auto;
-}
-
 .ghost-btn-mathemacure {
     padding: 5px;
     background-color: rgba(0,0,0,0);
@@ -142,6 +128,35 @@ article {
     -o-transform: scale(-1, 1);
     transform: scale(-1, 1);
 }
+#discord {
+   background-image: url('discord-background.png');
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   color: black;
+   height: 100vh;
+   padding: 0 20px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+#team {
+   background-image: url('seattle-background.jpg');
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   color: black;
+   height: 100vh;
+   padding: 0 20px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
 #home {
     background-image: url('background.jpg');
     background-size: cover;
