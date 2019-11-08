@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style='width: 100%; overflow-x: hidden;'>
    <head>
       <?php
          include 'include/head.php';
