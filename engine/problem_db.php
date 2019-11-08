@@ -17,6 +17,9 @@ $subject_problem = array(
     ),
     "precalc"=>array(
     "parametric-1"=>"\( _{t=0} ( \FormInput[2][math-input]{" . $id . "_p[]" . "}, \FormInput[2][math-input]{" . $id . "_p[]" . "})\)<br/>\( _{t=\FormInput[2][math-input]{" . $id . "_p[]}} ( \FormInput[2][math-input]{" . $id . "_p[]" . "}, \FormInput[2][math-input]{" . $id . "_p[]" . "})\)"
+    ),
+    "calc"=>array(
+    "derivative-"
     )
 );
 
