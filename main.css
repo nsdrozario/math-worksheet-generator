@@ -27,14 +27,23 @@
     background-color: rgba(0,0,0,0);
     color:  #1171ff;
     border: 2px solid #1171ff;
-    border-radius: 3px;}
-.ghost-btn-mathemacure:hover {
-    padding: 5px;
-    background-color:  #1171ff;
-    color: white;
-    border: 2px solid #1171ff;
     border-radius: 3px;
-    text-decoration: none;
+    -moz-transition:.5s
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+@media (hover:hover){
+  .ghost-btn-mathemacure:hover {
+      padding: 5px;
+      background-color:  #1171ff;
+      color: white;
+      border: 2px solid #1171ff;
+      border-radius: 3px;
+      text-decoration: none;
+      -moz-transition:.5s
+      -webkit-transition: .5s;
+      transition: .5s;
+  }
 }
 .bold {
     font-weight: bold;

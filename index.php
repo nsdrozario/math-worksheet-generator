@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style='width: 100%; overflow-x: hidden;'>
    <head>
       <?php
          include 'include/head.php';
@@ -8,8 +8,6 @@
          $(document).ready(function() {
             $('#navhome').css('color', 'white');
             $('#navhome').css('cursor', 'default');
-            $('#navsheet').css('color', '');
-            $('#navteam').css('color', '');
          });
       </script>
    </head>
