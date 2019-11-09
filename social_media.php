@@ -45,9 +45,9 @@
             <a target='_blank' class='ghost-btn-mathemacure' href="https://www.youtube.com/channel/UCOKyYMqO2samm6wPtz4oNuw">Youtube Channel</a>
             <br/><br/><br/><br/>
             <h2>Our Email</h2>
-            <p>Don't want to use the other methods of contacting us? We have the good old-fashioned email. Email us at the address below!</p>
+            <p>Don't want to use the other methods of contacting us? We have the good old-fashioned email. Just click below to email us directly using the mail app or use the link to email us!</p>
             <br/><br/>
-            <p>mathemacure@gmail.com</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target='_blank' class='ghost-btn-mathemacure' href="mailto:mathemacure@gmail.com">Email</a> &nbsp; &nbsp;|&nbsp; &nbsp; mathemacure@gmail.com</p>
          </div>
       </div>
       <?php
