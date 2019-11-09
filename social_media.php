@@ -43,6 +43,11 @@
             <p>Having trouble with learning math? Come to our youtube channel to learn complicated math in simple steps. Just click the link below and subscribe to get notifications of our latest videos.</p>
             <br/><br/>
             <a target='_blank' class='ghost-btn-mathemacure' href="https://www.youtube.com/channel/UCOKyYMqO2samm6wPtz4oNuw">Youtube Channel</a>
+            <br/><br/><br/><br/>
+            <h2>Our Email</h2>
+            <p>Don't want to use the other methods of contacting us? We have the good old-fashioned email. Email us at the address below!</p>
+            <br/><br/>
+            <p>mathemacure@gmail.com</p>
          </div>
       </div>
       <?php
