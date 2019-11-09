@@ -33,6 +33,7 @@
     transition: .5s;
   }
 @media (hover:hover){
+
   .ghost-btn-mathemacure:hover {
       padding: 5px;
       background-color:  #1171ff;
@@ -44,6 +45,11 @@
       -webkit-transition: .5s;
       transition: .5s;
   }
+
+  #print:hover {
+    cursor: pointer;
+  }
+
 }
 .bold {
     font-weight: bold;
