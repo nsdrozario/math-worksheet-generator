@@ -30,6 +30,14 @@ ob_start();
 
 <?php
     $subjects['precalc'] = ob_get_clean();
+    ob_start();
+?>
+
+<option value="none">---</option>
+<option value="deriv-poly">Differentiate polynomials at a point</option>
+
+<?php
+     $subjects['calc'] = ob_get_clean();
     $subject = $_POST['subject'];
     echo $subjects[$subject];
 

@@ -14,8 +14,11 @@
       <li class="nav-item">
         <a class="nav-link" id='navsheet' href="worksheet.php">Worksheets</a>
       </li>
-         <li class="nav-item">
-        <a class="nav-link" id='navteam' href="team.php">Our Team</a>
+          <li class="nav-item">
+          <a class="nav-link" id='navcalc' href="calculators.php">Calculators</a>
+      </li>
+          <li class="nav-item">
+          <a class="nav-link" id='navteam' href="team.php">Our Team</a>
       </li>
           <li class="nav-item">
           <a class="nav-link" id='navsocial' href="social_media.php">Social Media</a>
