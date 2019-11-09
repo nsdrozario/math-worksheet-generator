@@ -15,4 +15,9 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 <link href="main.css" rel="stylesheet"/>
 <link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="mathquill.css"/>
+<script src="mathquill.js"></script>
+<script>
+var MQ = MathQuill.getInterface(2);
+</script>
 <meta name="google-site-verification" content="P48RQ30mnW1cIWCkYfBihhCg0IrvJCcWImRcGKpsqC4" />

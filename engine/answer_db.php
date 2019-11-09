@@ -39,6 +39,11 @@ $answer = array(
 "parametric-1"=>function() {
     $args = func_get_arg(0);
     return parametric_1($args[0],$args[1],$args[3],$args[4],$args[2]);
+},
+"deriv-poly"=>function(){
+        $args = func_get_arg(0);
+        $func = poly_to_func($args[1]);
+        return derivative($func, $args[0]);
 }
 );
 

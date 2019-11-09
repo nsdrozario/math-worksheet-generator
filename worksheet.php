@@ -8,97 +8,107 @@
       ?>
 
       <script>
-         window.onload = function() {
-            document.getElementById('navsheet').style.color = 'white';
-            document.getElementById('navsheet').style.cursor = 'default';
-         }
-         var problem_count = 0;
+          window.onload = function () {
+              document.getElementById('navsheet').style.color = 'white';
+              document.getElementById('navsheet').style.cursor = 'default';
+          }
+          var problem_count = 0;
 
-         function randomize(upper_bound, lower_bound) {
-            $(".math-input").each(function (i, v) {
-               $(this).val(Math.floor(Math.random() * (parseInt(upper_bound) - parseInt(lower_bound))) + parseInt(lower_bound));
-            }
-            )
-         }
+          function randomize(upper_bound, lower_bound) {
+              $(".math-input").each(function (i, v) {
+                  $(this).val(Math.floor(Math.random() * (parseInt(upper_bound) - parseInt(lower_bound))) + parseInt(lower_bound));
+              }
+             )
+          }
 
-         function get_problem(type, element, id) {
-            if (type == "none") {
-               $("#" + element).parent().children("div").html("");
-            }
-            else {
-               $.post("engine/problem_db.php", { problem_type: type, subject: $("#subject").val(), elem_id: id }, function (data, status) {
-                  window.problem_info = data;
-                  $("#" + element).parent().children("div.preview").html("<br/>" + window.problem_info);
-                  MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-               });
-            }
-         }
+          function get_problem(type, element, id) {
+              if (type == "none") {
+                  $("#" + element).parent().children("div").html("");
+              }
+              else {
+                  $.post("engine/problem_db.php", { problem_type: type, subject: $("#subject").val(), elem_id: id }, function (data, status) {
+                      window.problem_info = data;
+                      $("#" + element).parent().children("div.preview").html("<br/>" + window.problem_info);
+                      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+                      $(".math-input:not(math-expr)").attr("type", "number");
+                      var math_input = MQ.MathField(document.getElementById(id + "_p[]_i"), {
+                          handlers: {
+                              edit: function () {
+                                  var input = math_input.latex();
+                                  document.getElementById(id + "_p[]").setAttribute("value", input);
+                              }
+                          }
+                      });
+                  });
+              }
 
-         function check() {
-            var val_1 = $("#upper_bound").val();
-            var val_2 = $("#lower_bound").val();
+          }
 
-            if (parseInt(val_2) >= parseInt(val_1)) {
-               $("#randomize-inputs").prop("disabled", true);
-            }
-            else {
-               $("#randomize-inputs").prop("disabled", false);
-            }
-         }
+          function check() {
+              var val_1 = $("#upper_bound").val();
+              var val_2 = $("#lower_bound").val();
 
-         function addCard() {
-            problem_count++;
-            $("#problem_c").val(problem_count);
-            var html = "<div id='problem" + problem_count + "' class='card container text-center'>" +
-            "<div id='p_card_" + problem_count + "' class='card-body'>" +
-            "<p>Problem type: </p><select class='text-center' name='p_" + problem_count + "_type' id='p_" + problem_count + "_type' onchange='get_problem(this.value, this.id, " + problem_count + ")'>" +
-            window.options +
-            "</select><br/>" +
-            "<div class='preview' id='p_preview_" + problem_count + "'>" +
-            "</div>" +
-            "<div class='close-card' id='close_" + problem_count + "' onclick='remove_problem(this.id)'>x</div>"
-            "</div></div>";
-            $("#problems").append(html);
-         }
+              if (parseInt(val_2) >= parseInt(val_1)) {
+                  $("#randomize-inputs").prop("disabled", true);
+              }
+              else {
+                  $("#randomize-inputs").prop("disabled", false);
+              }
+          }
 
-         function remove_problem(id) {
-            var card = document.getElementById(id);
-            var card_id = card.id;
-            card_id = card_id.match(/\d+/g);
-            problem_count--;
-            $("#problem_c").val(problem_count);
-            card.parentNode.parentNode.parentNode.removeChild(card.parentNode.parentNode);
+          function addCard() {
+              problem_count++;
+              $("#problem_c").val(problem_count);
+              var html = "<div id='problem" + problem_count + "' class='card container text-center'>" +
+             "<div id='p_card_" + problem_count + "' class='card-body'>" +
+             "<p>Problem type: </p><select class='text-center' name='p_" + problem_count + "_type' id='p_" + problem_count + "_type' onchange='get_problem(this.value, this.id, " + problem_count + ")'>" +
+             window.options +
+             "</select><br/>" +
+             "<div class='preview' id='p_preview_" + problem_count + "'>" +
+             "</div>" +
+             "<div class='close-card' id='close_" + problem_count + "' onclick='remove_problem(this.id)'>x</div>"
+              "</div></div>";
+              $("#problems").append(html);
+          }
 
-            // now decrement every number within the div id problems
+          function remove_problem(id) {
+              var card = document.getElementById(id);
+              var card_id = card.id;
+              card_id = card_id.match(/\d+/g);
+              problem_count--;
+              $("#problem_c").val(problem_count);
+              card.parentNode.parentNode.parentNode.removeChild(card.parentNode.parentNode);
 
-            var str = document.getElementById("problems").innerHTML;
-            str = str.replace(/(\d+)/g, function (_, num) {
-               if (parseInt(num) > parseInt(card_id)) {
-                  return parseInt(num) - 1;
-               }
-               else {
-                  return parseInt(num);
-               }
-            });
+              // now decrement every number within the div id problems
 
-            document.getElementById("problems").innerHTML = str;
-         }
+              var str = document.getElementById("problems").innerHTML;
+              str = str.replace(/(\d+)/g, function (_, num) {
+                  if (parseInt(num) > parseInt(card_id)) {
+                      return parseInt(num) - 1;
+                  }
+                  else {
+                      return parseInt(num);
+                  }
+              });
 
-         function update_subject() {
-            problem_count = 0;
-            $("#problems").html("");
-            var s = $("#subject").val();
-            if (s != "none") {
-               $("#add_card").prop('disabled', false);
-            }
-            else {
-               $("#add_card").prop('disabled', true);
-            }
-            window.options = ""; // global var
-            $.post("engine/subject_select.php", { subject: s }, function (data, status) {
-               window.options = data;
-            })
-         }
+              document.getElementById("problems").innerHTML = str;
+          }
+
+          function update_subject() {
+              problem_count = 0;
+              $("#problems").html("");
+              var s = $("#subject").val();
+              if (s != "none") {
+                  $("#add_card").prop('disabled', false);
+              }
+              else {
+                  $("#add_card").prop('disabled', true);
+              }
+              window.options = ""; // global var
+              $.post("engine/subject_select.php", { subject: s }, function (data, status) {
+                  window.options = data;
+              })
+          }
       </script>
    </head>
    <body>
@@ -116,7 +126,7 @@
                <option value="arithm">Arithmetic</option>
                <option value="alg">Algebra</option>
                <option value="precalc">Precalculus</option>
-               <!--  <option value="calc">Calculus</option> -->
+               <option value="calc">Calculus</option>
             </select></p>
          </div>
       </div>
