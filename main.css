@@ -33,7 +33,6 @@
     transition: .5s;
   }
 @media (hover:hover){
-
   .ghost-btn-mathemacure:hover {
       padding: 5px;
       background-color:  #1171ff;
@@ -48,6 +47,16 @@
 
   #print:hover {
     cursor: pointer;
+  }
+
+  .footer-link:hover {
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+
+  a:hover {
+      text-decoration: none;
   }
 
 }
@@ -96,22 +105,6 @@
     border-radius: 5px;
     padding: 10px;
 }
-
-/*#cookie-footer {
-    position: fixed;
-    bottom: 5px;
-    background-color: rgba(0, 0, 0, 0.81);
-    color: white;
-    width: 50%;
-    margin: 0 auto;
-    text-align: left;
-    padding: 10px;
-    border-radius: 3px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: rgba(8, 5, 22, 0.86);
-    left: 5px;
-}*/
 #close-cookie-footer {
     position: absolute;
     top: 0;
@@ -201,11 +194,6 @@
 a {
     color: black;
 }
-@media (hover:hover) {
-a:hover {
-    text-decoration: none;
-}
-}
 
 pre.license{
     background-color: #e3e3e3;
@@ -267,6 +255,10 @@ button:disabled {
 }
 .footer-link {
     padding-left: 20px;
+    color: white;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
 }
 #footer {
     color: #FFFFFF;
