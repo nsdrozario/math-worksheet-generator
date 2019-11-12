@@ -30,15 +30,13 @@
          <br/>
          <div class="jumbotron text-center">
             <h2>Nathaniel D'Rozario</h2><br/>
-            <p>CEO & Software Architect</p><br/><br/>
+            <p>Co-Founder, CEO & Software Architect</p><br/><br/>
             <h2>Nishchal Shukla</h2><br/>
-            <p>Lead Web Developer</p><br/><br/>
-            <h2>Jennifer Chan</h2><br/>
-            <p>Designer</p><br/><br/>
+            <p>Co-Founder, Lead Web Developer</p><br/><br/>
             <h2>Sutantu Balamurugan</h2><br/>
             <p>Software Engineer</p><br/><br/>
             <h2>Ryan Schlosser</h2><br/>
-            <p>Software Engineer</p><br/><br/>
+            <p>Web Developer</p><br/><br/>
          </div>
          <?php
             include 'include/footer.php';
