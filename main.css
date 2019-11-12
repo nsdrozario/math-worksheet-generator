@@ -136,8 +136,8 @@
     -o-transform: scale(-1, 1);
     transform: scale(-1, 1);
 }
-#discord {
-   background-image: url('discord-background.png');
+#social {
+   background-image: url('social-background.png');
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
