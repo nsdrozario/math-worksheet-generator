@@ -151,7 +151,7 @@
    justify-content: center;
 }
 #team {
-   background-image: url('team-background.jpg');
+   background-image: url('team-background.png');
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
