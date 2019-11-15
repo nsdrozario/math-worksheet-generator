@@ -58,6 +58,12 @@
   a:hover {
       text-decoration: none;
   }
+    
+  .ghost-btn:hover {
+      color: black;
+      background-color: white;
+      text-decoration: none;
+  }
 
 }
 .bold {
@@ -89,10 +95,6 @@
     padding: 10px;
     transition: background-color 200ms, color 200ms;
 
-}
-.ghost-btn:hover {
-    color: black;
-    background-color: white;
 }
 .btn-mathemacure:hover {
     background-color: #3399ff;
