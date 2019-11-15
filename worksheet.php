@@ -116,7 +116,7 @@
          include 'include/navbar.php';
       ?><br/><br/>
 
-      <div class='jumbotron text-center' id="header-jumbotron" style="background-color: #66c7ff; color: white; padding: 8%;"><h1 style="color: white;">Worksheet Creator</h1></div>
+      <div class='jumbotron text-center' id="header-jumbotron" style="background-color: #00AEEF; color: white; padding: 8%;"><h1 style="color: white;">Worksheet Creator</h1></div>
 
       <div id="menus">
          <div class='text-center' id="menu-1">
