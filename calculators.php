@@ -15,11 +15,10 @@
   <body>
     <?php
     include 'include/navbar.php';
-     ?>
-    <div class='jumbotron text-center'>
+     ?><br/><br/>
+    <div class='jumbotron text-center background'>
         <h1>Page Temporarily Unavailable</h1>
     </div>
-    <br/><br/>
     <?php
     include 'include/cookie_footer.php';
     include 'include/footer.php';

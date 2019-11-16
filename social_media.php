@@ -19,7 +19,7 @@
          include 'include/navbar.php';
       ?>
 
-      <div id='discord'>
+      <div id='social' class='background'>
          <div class='jumbotron text-center' id='standout'>
             <h2 id='smaller'>Our Social Media</h2><br/>
             <h4>Get help and information anywhere and anytime.</h4><br/>

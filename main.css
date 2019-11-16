@@ -58,6 +58,12 @@
   a:hover {
       text-decoration: none;
   }
+    
+  .ghost-btn:hover {
+      color: black;
+      background-color: white;
+      text-decoration: none;
+  }
 
 }
 .bold {
@@ -89,10 +95,6 @@
     padding: 10px;
     transition: background-color 200ms, color 200ms;
 
-}
-.ghost-btn:hover {
-    color: black;
-    background-color: white;
 }
 .btn-mathemacure:hover {
     background-color: #3399ff;
@@ -136,37 +138,16 @@
     -o-transform: scale(-1, 1);
     transform: scale(-1, 1);
 }
-#discord {
-   background-image: url('discord-background.png');
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-   color: black;
-   height: 100vh;
-   padding: 0 20px;
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+#social {
+    background-image: url('images/social-background.png');
 }
 #team {
-   background-image: url('team-background.png');
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-   color: black;
-   height: 100vh;
-   padding: 0 20px;
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+    background-image: url('images/team-background.png');
 }
-
 #home {
-    background-image: url('background.jpg');
+    background-image: url('images/home-background.jpg');
+}
+.background {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -178,6 +159,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.background::before { /* allows fixed background on mobile browsers */
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
 }
 #features {
     background-color: white;

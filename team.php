@@ -19,7 +19,7 @@
          include 'include/navbar.php';
       ?>
 
-      <div id='team'>
+      <div id='team' class="background">
          <div class='jumbotron text-center' id='standout'>
             <h2 id='smaller'>Our Team</h2><br/>
             <h4>Mathemacure is run and maintained by an elite team of high school students who wish to help their community.</h4><br/>
