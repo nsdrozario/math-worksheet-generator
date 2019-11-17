@@ -30,15 +30,19 @@
          <br/>
          <div class="jumbotron text-center">
             <h2>Nathaniel D'Rozario</h2><br/>
-            <p>Co-Founder, CEO &amp; Software Architect</p><br/><br/>
-            <h2>Nishchal Shukla</h2><br/>
-            <p>Co-Founder, Lead Web Developer</p><br/><br/>
+            <p>Co-Founder, CEO &amp; Software Architect</p><br/>
+            <a href='https://www.linkedin.com/in/nathaniel-d-rozario-444aa718a/' target='_blank' class='ghost-btn-mathemacure'>LinkedIn Profile</a><br/><br/><br/><br/>
+            <h2>Nishchal Shukla</h2>
+            <p>Co-Founder, Lead Web Developer</p><br/>
+            <a href='https://www.linkedin.com/in/nishchal-shukla1/' target='_blank' class='ghost-btn-mathemacure'>LinkedIn Profile</a><br/><br/><br/><br/>
             <h2>Jennifer Chan</h2><br/>
             <p>Designer</p><br/><br/>
             <h2>Sutantu Balamurugan</h2><br/>
-            <p>Software Engineer</p><br/><br/>
+            <p>Software Engineer</p><br/>
+            <a href='https://www.linkedin.com/in/sutantu-balamurugan-a17668187/' target='_blank' class='ghost-btn-mathemacure'>LinkedIn Profile</a><br/><br/><br/><br/>
             <h2>Ryan Schlosser</h2><br/>
-            <p>Web Developer</p><br/><br/>
+            <p>Web Developer</p><br/>
+            <a href='https://www.linkedin.com/in/rtschlosser/' target='_blank' class='ghost-btn-mathemacure'>LinkedIn Profile</a><br/><br/><br/><br/>
             <h2>Ethan Le</h2><br/>
             <p>Tester</p><br/><br/>
             <h2>Nabeel Lakhair</h2><br/>
