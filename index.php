@@ -15,7 +15,7 @@
       <?php
          include 'include/navbar.php';
       ?>
-      <div id='home'>
+      <div id='home' class="background">
          <div class='jumbotron text-center' id='standout'>
             <h2 id='smaller'>Mathemacure</h2><br/>
             <h4>A simple solution for math training</h4><br/>
