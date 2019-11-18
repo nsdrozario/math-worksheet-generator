@@ -32,6 +32,7 @@
           }
           else {
             $('#insert-here').html('');
+            $('#insert-here2').html('');
           }
         }
      </script>
