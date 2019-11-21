@@ -1,6 +1,6 @@
 <?php
 
-define("EPILSON", 0.0000001);    
+define("EPILSON", 0.0000001);
 
 include 'dynamic_problem_answer.php';
 function gcd ($a,$b) {
@@ -74,13 +74,13 @@ function add($a, $b) { // supports both complex and real addition
         $c->i = ($a->i) + ($b->i);
         return $c;
     } else if (get_class($a) == "complex" && get_class($b) == FALSE) {
-        
+
     } else if (get_class($a) == FALSE && get_class($b) == "complex") {
-        
+
     } else {
-        
+
     }
-} 
+}
 
 
 
@@ -111,32 +111,32 @@ function quadratic_formula($a_0,$b_0,$c_0) {
 function parametric_1($x1,$y1,$x2,$y2,$t) {
    $sign_x = "";
    $sign_y = "";
-   
+
     if ((intval($x2)-intval($x1)) < 0) {
         $sign_x = "-";
     } else {
         $sign_x = "+";
     }
-    
+
     if ((intval($y2)-intval($y1)) < 0) {
         $sign_y = "-";
     } else {
         $sign_y = "+";
     }
-    
+
     $dtx = abs(intval($x2-$x1) / intval($t));
     $dty = abs(intval($y2-$y1) / intval($t));
-    
+
     $x_p = $x1 . $sign_x . $dtx;
     $y_p = $y1 . $sign_y . $dty;
-    
+
     return "(" . $x_p . "," . $y_p . ")";
 }
 
 function poly_to_func($str) { // fix this
     $coefficients = array();
     $degrees = array();
-   
+
     $terms = explode("[+]", $str);
 
     for ($i=0; $i < count($terms); $i++) {
@@ -144,7 +144,7 @@ function poly_to_func($str) { // fix this
          $coefficients[$i] = substr($terms[$i], 0,1);
     }
 
-   
+
    /*
     $c = preg_match_all("([-]?\d)[x]\^\d", $str, $coefficients);
     $d = preg_match_all("[-]?\d[x]\^(\d)", $str, $degrees);*/
@@ -172,7 +172,7 @@ function standard_to_vertex($a,$b,$c)
 {
     $h = (0 - $b)/(2 * $a);
     $k = (pow($h,2) * $a) + ($b * $h) + $c;
-    return "y = " . $a . "(x - " . $h . ")^2 + " . $k;        //Exponent could be superscrippted to look better 
+    return "y = " . $a . "(x - " . $h . ")^2 + " . $k;        //Exponent could be superscrippted to look better
 }
 
 ?>
