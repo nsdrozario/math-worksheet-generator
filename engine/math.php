@@ -148,10 +148,37 @@ class term {
 function poly_split($str) {
 
 $s = new stack(); // sign
-$str_a = explode($str, '');
-foreach ($str_a as $char) {
+$terms = array();
+$str_a = explode($str, ''); // split into chars
+$buffer = "";
     
+foreach ($str_a as $char) { // manually parse
+    
+    if ($char == "+" || $char == "-") {
+        $s->push($char);
+        $terms[count($terms)+1] = $buffer;
+        $buffer = ""; // reset buffer
+    } else {
+        $buffer = $buffer . $char; // append to buffer
+    }
+ 
 }
+foreach ($s->c as $sign_0) {
+    $sign_0_v = intval($sign_0 . "1");
+    foreach ($terms as $t) {
+    $nt = new term();
+        switch($sign_0_v) {
+            case 1: 
+                // implement
+            break;
+            case -1: 
+                // implement
+            break;
+        }
+    }
+}
+
+
 
 
 }
