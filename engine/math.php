@@ -145,6 +145,17 @@ class term {
 
 }
 
+function poly_split($str) {
+
+$s = new stack(); // sign
+$str_a = explode($str, '');
+foreach ($str_a as $char) {
+    
+}
+
+
+}
+
 
 
 function gcd ($a,$b) {
