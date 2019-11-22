@@ -1,26 +1,15 @@
 <?php
 
 define("EPILSON", 0.0000001);
+/* 
+The following constants are to be used in rendering equations.
+*/
+define("WELL_FORMED", 1); // for showing correct mathematical formatting
+define("COMP_FRIENDLY", 0); // for plugging into functions like poly_to_func
+
 
 include 'dynamic_problem_answer.php';
-function gcd ($a,$b) {
-    $tmp = 0;
-    $a_1 = $a;
-    $b_1 = $b;
-    if ($a_1 < $b_1) {
-        $tmp = $a_1;
-        $a_1 = $b_1;
-        $b_1=$tmp;
-    }
 
-    while ($b_1 != 0) {
-        $b_2 = $a_1 % $b_1;
-        $a_1 = $b_1;
-        $b_1=$b_2;
-    }
-
-    return $a_1;
-}
 class complex {
     public $r = 0;
     public  $i = 0;
@@ -56,6 +45,127 @@ class complex {
     }
 
 }
+
+class stack { // technically this functionality is already in php but this makes it more convienient
+
+    public $c = array();
+    private $size = 0;
+
+    function __construct() {
+        // nothing to do here really
+    }
+
+    function size() {
+        return $size;
+    }
+
+    function push($v) {
+        $size++;
+        $c[$size] = $v;
+    }
+
+    function pop() {
+        return array_pop($c);
+    }
+
+}
+
+class polynomial {
+    public $t = array(); // type = term;
+
+    function __construct() {
+        $args = func_get_arg(0);
+        foreach ($args as $a) {
+            $t[count($t)+1] = $a; 
+        }
+    }
+
+    function render($mode) {
+        switch($mode) {
+            case WELL_FORMED:
+                /*
+                please implement
+
+                Intended behavior:
+                Using the array of terms: 
+                    $t = 
+                    [
+                        {
+                            $c=1,
+                            $e=2,
+                            $sign="+",
+                            $var="x"
+                        },
+                        {
+                            $c=2,
+                            $e=1,
+                            $sign="-",
+                            $var="x"
+                        },
+                        {
+                            $c=1,
+                            $e=0,
+                            $sign="+",
+                            $var=null;
+                        }
+                    ]
+                    Please note that input will not be JSON but this is the best way to textually represent the array of `term` class objects.
+                
+                    Goal: Output a well-formed version of the polynomial as a string.
+
+                    Example output:
+
+                    x^2 - 2x + 1 
+
+                    Spaces are optional.
+
+                */
+            break;
+            case COMP_FRIENDLY:
+                /*
+                Same as above except returned string should be as friendly as possible for poly_to_func (i.e. 1x^2 - 2x^1 + 1x^0)
+                */
+            break;
+        }
+    }
+
+}
+
+class term {
+
+    public $c = 0; // coefficient
+    public $e = 0; // exponent
+    public $sign = "+"; 
+    public $var = "x";
+
+    function __construct() {
+        // not necessary
+    }
+    
+
+}
+
+
+
+function gcd ($a,$b) {
+    $tmp = 0;
+    $a_1 = $a;
+    $b_1 = $b;
+    if ($a_1 < $b_1) {
+        $tmp = $a_1;
+        $a_1 = $b_1;
+        $b_1=$tmp;
+    }
+
+    while ($b_1 != 0) {
+        $b_2 = $a_1 % $b_1;
+        $a_1 = $b_1;
+        $b_1=$b_2;
+    }
+
+    return $a_1;
+}
+
 
 function i_sqrt($c) {
        if ($c < 0) {
