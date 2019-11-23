@@ -197,15 +197,22 @@ foreach ($s->c as $i=>$sign_0) { // PHP 7 uses a copy of the array so using pop(
             $nt->sign = $s->shift();
         }
 
-        // find if variable present
+        // find if variable present & exponent
 
         if (preg_match("/[x]/i", $t)) {
-        
+            if (strstr(substr($t, -2), "^") != FALSE) {
+                $nt->e = intval(substr($t, -1));
+            } else {
+                $nt->e = 1;
+            }
+            $nt->var="x";
         } else {
         $nt->c = 0; // constant
-        $nt->variable = "";
+        $nt->var="";
         }
 
+        // coefficient
+        // implement
     }
 }
 
