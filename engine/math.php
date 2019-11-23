@@ -56,16 +56,24 @@ class stack { // technically this functionality is already in php but this makes
     }
 
     function size() {
-        return $size;
+        return $this->size;
     }
 
     function push($v) {
-        $size++;
-        $c[$size] = $v;
+        $this->size++;
+        $this->c[$this->size] = $v;
+    }
+
+    function shift() { // if you actually meant to make a queue instead of a stack
+        return array_shift($this->c);
+    }
+
+    function unshift($x) { // append to beginning
+        array_unshift($this->c,$x);
     }
 
     function pop() {
-        return array_pop($c);
+        return array_pop($this->c);
     }
 
 }
@@ -76,7 +84,7 @@ class polynomial {
     function __construct() {
         $args = func_get_arg(0);
         foreach ($args as $a) {
-            $t[count($t)+1] = $a; 
+            $this->t[count($this->t)+1] = $a; 
         }
     }
 
@@ -163,17 +171,26 @@ foreach ($str_a as $char) { // manually parse
     }
  
 }
-foreach ($s->c as $sign_0) {
+foreach ($s->c as $i=>$sign_0) { // PHP 7 uses a copy of the array so using pop() is fine.
     $sign_0_v = intval($sign_0 . "1");
-    foreach ($terms as $t) {
-    $nt = new term();
-        switch($sign_0_v) {
-            case 1: 
-                // implement
-            break;
-            case -1: 
-                // implement
-            break;
+    $t_ = $s->shift(); // throwaway var
+    foreach ($terms as $k=>$t) {
+        $nt = new term();
+        $real_sign = "+";
+        if ($terms[$k+1] == "") { // inner sign
+            $sign_1 = $s->shift();
+            $sign_1_v = intval($sign_1."1");
+            switch($sign_1_v * $sign_0_v) {
+                case 1:
+                $real_sign = "+";
+                break;
+                case -1:
+                $real_sign = "-";
+                break;
+            }
+        $nt->sign = $real_sign;
+        } else {
+            // implement
         }
     }
 }
