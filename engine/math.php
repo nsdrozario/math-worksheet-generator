@@ -159,7 +159,7 @@ $s = new stack(); // sign
 $terms = array();
 $str_a = explode($str, ''); // split into chars
 $buffer = "";
-    
+$terms_1 = array();
 foreach ($str_a as $char) { // manually parse
     
     if ($char == "+" || $char == "-") {
@@ -171,12 +171,16 @@ foreach ($str_a as $char) { // manually parse
     }
  
 }
+
 foreach ($s->c as $i=>$sign_0) { // PHP 7 uses a copy of the array so using pop() is fine.
     $sign_0_v = intval($sign_0 . "1");
     $t_ = $s->shift(); // throwaway var
     foreach ($terms as $k=>$t) {
         $nt = new term();
         $real_sign = "+";
+
+        // set sign of term
+
         if ($terms[$k+1] == "") { // inner sign
             $sign_1 = $s->shift();
             $sign_1_v = intval($sign_1."1");
@@ -190,10 +194,21 @@ foreach ($s->c as $i=>$sign_0) { // PHP 7 uses a copy of the array so using pop(
             }
         $nt->sign = $real_sign;
         } else {
-            // implement
+            $nt->sign = $s->shift();
         }
+
+        // find if variable present
+
+        if (preg_match("/[x]/i", $t)) {
+        
+        } else {
+        $nt->c = 0; // constant
+        $nt->variable = "";
+        }
+
     }
 }
+
 
 
 
