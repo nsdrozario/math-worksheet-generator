@@ -39,11 +39,6 @@
             <br/><br/>
             <a target='_blank' class='ghost-btn-mathemacure' href="https://www.instagram.com/mathemacure/">Instagram Link</a>
             <br/><br/><br/><br/>
-       <!-- <h2>Our Youtube</h2>
-            <p>Having trouble with learning math? Come to our youtube channel to learn complicated math in simple steps. Just click the link below and subscribe to get notifications of our latest videos.</p>
-            <br/><br/>
-            <a target='_blank' class='ghost-btn-mathemacure' href="https://www.youtube.com/channel/UCOKyYMqO2samm6wPtz4oNuw">Youtube Channel</a>
-            <br/><br/><br/><br/> -->
             <h2>Our Email</h2>
             <p>Don't want to use the other methods of contacting us? We have the good old-fashioned email. Just click below to email us directly using the mail app or use the link to email us!</p>
             <br/><br/>
