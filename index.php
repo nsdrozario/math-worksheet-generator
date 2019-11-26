@@ -47,7 +47,7 @@
          <div class="row">
             <div class="col-sm-6 text-center" id='left'>
                <h2>Fast</h2><br/>
-               <p>Create worksheets within minutes</p>
+               <p>Less time making worksheets, more time doing math.</p>
             </div>
             <div class='col-sm-6 text-center' id='right'>
                <h2>Diverse</h2><br/>
