@@ -536,7 +536,7 @@ Its license is listed below.
 
 
 This website uses the utility / software library MathQuill. The project can be found at https://github.com/mathquill/mathquill and its website is http://mathquill.com/.
-Its license is listed below.
+Its license is listed below. Note that the files prefixed with mathquill fall under this license, and the files in the "font" directory of this website, as they come with the MathQuill distribution, most likely fall under this license as well (seeing they are part of the MathQuill project).
 
 Mozilla Public License
 Version 2.0
