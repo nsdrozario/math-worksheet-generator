@@ -22,7 +22,7 @@
       <div id='team' class="background">
          <div class='jumbotron text-center' id='standout'>
             <h2 id='smaller'>Our Team</h2><br/>
-            <h4>Mathemacure is run and maintained by an elite team of high school students who wish to help their community.</h4><br/>
+            <h4>Mathemacure is run and maintained by an team of high school students who wish to help their community.</h4><br/>
          </div>
       </div>
 
@@ -30,7 +30,7 @@
          <br/>
          <div class="jumbotron text-center">
             <h2>Nathaniel D'Rozario</h2><br/>
-            <p>Co-Founder, CEO &amp; Software Architect</p><br/>
+            <p>Co-Founder, Software Architect</p><br/>
             <a href='https://www.linkedin.com/in/nathaniel-d-rozario-444aa718a/' target='_blank' class='ghost-btn-mathemacure'>LinkedIn Profile</a><br/><br/><br/><br/>
             <h2>Nishchal Shukla</h2>
             <p>Co-Founder, Lead Web Developer</p><br/>
@@ -45,8 +45,6 @@
             <a href='https://www.linkedin.com/in/rtschlosser/' target='_blank' class='ghost-btn-mathemacure'>LinkedIn Profile</a><br/><br/><br/><br/>
             <h2>Ethan Le</h2><br/>
             <p>Tester</p><br/><br/>
-            <h2>Nabeel Lakhair</h2><br/>
-            <p>Video Crew Member</p><br/>
          </div>
          <?php
             include 'include/footer.php';
