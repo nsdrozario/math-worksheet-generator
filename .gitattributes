@@ -1,1 +1,3 @@
 *.js linguist-detectable=false
+mathquill.css linguist-detectable=false
+mathquill-basic.css linguist-detectable=false
