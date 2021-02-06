@@ -6,12 +6,15 @@ A webapp that generates randomized, printable math worksheets with problem types
 Best used with Google Chrome.
 
 ![Screenshot of Mathemacure's problem editor](/images/editor-screenshot.png)
+
 ![Screenshot of a Mathemacure-generated worksheet](/images/problem-sheet-screenshot.png)
+
 ![Screenshot of a Mathemacure-generated answer key](/images/answer-sheet-screenshot.png)
 
 Example PDFs (using print to PDF feature):
 
 [Worksheet](/examples/example-problems.pdf)
+
 [Answers](/examples/example-answers.pdf)
 
 ## Problem sets
