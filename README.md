@@ -7,7 +7,6 @@ A webapp that generates math worksheets with problems of your choice.
 There are four categories you can choose from to make a worksheet:
 - Arithemtic
 - Algebra
-- Pre-Calculus
 - Calculus
 
 Here are the types of problems this app supports:
@@ -21,9 +20,6 @@ Here are the types of problems this app supports:
 #### Algebra
 - Solving for x with linear equations
 - Factoring / finding roots of quadratic equations (complex roots supported)
-
-#### Pre-Calculus
-- Parametric Equations (lacking in functionality)
 
 #### Calculus
 - Finding derivatives at a point with polynomials
