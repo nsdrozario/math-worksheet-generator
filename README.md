@@ -41,7 +41,7 @@ Here are the types of problems this app supports:
 
 ## Other features
 - Worksheets are printable with the click of a button
-- Answer keys can be generated for each worksheets
+- Answer keys can be generated for each worksheet
 
 ## License
 See the LICENSE files within the project for details, there are multiple licenses that apply to specific parts of this project.
